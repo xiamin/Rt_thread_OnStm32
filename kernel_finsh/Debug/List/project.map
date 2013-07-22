@@ -1,0 +1,1338 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V5.41.0.51741/W32 for ARM              11/Jul/2013  11:01:01 #
+# Copyright (C) 2007-2009 IAR Systems AB.                                     #
+#                                                                             #
+#    Output file  =  E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Exe\project.ou #
+#                    t                                                        #
+#    Map file     =  E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\List\project.m #
+#                    ap                                                       #
+#    Command line =  E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\applicatio #
+#                    n.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_r #
+#                    t-thread_for_armfly_101210\kernel_finsh\Debug\Obj\board. #
+#                    o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt- #
+#                    thread_for_armfly_101210\kernel_finsh\Debug\Obj\clock.o  #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\cmd.o      #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\context_ia #
+#                    r.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_r #
+#                    t-thread_for_armfly_101210\kernel_finsh\Debug\Obj\core_c #
+#                    m3.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_ #
+#                    rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj\cpu.o #
+#                     E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-t #
+#                    hread_for_armfly_101210\kernel_finsh\Debug\Obj\device.o  #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\fault.o    #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\fault_iar. #
+#                    o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt- #
+#                    thread_for_armfly_101210\kernel_finsh\Debug\Obj\finsh_co #
+#                    mpiler.o E:\RT_thread\pack_rt-thread_for_armfly_101210\p #
+#                    ack_rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj\f #
+#                    insh_error.o E:\RT_thread\pack_rt-thread_for_armfly_1012 #
+#                    10\pack_rt-thread_for_armfly_101210\kernel_finsh\Debug\O #
+#                    bj\finsh_heap.o E:\RT_thread\pack_rt-thread_for_armfly_1 #
+#                    01210\pack_rt-thread_for_armfly_101210\kernel_finsh\Debu #
+#                    g\Obj\finsh_init.o E:\RT_thread\pack_rt-thread_for_armfl #
+#                    y_101210\pack_rt-thread_for_armfly_101210\kernel_finsh\D #
+#                    ebug\Obj\finsh_node.o E:\RT_thread\pack_rt-thread_for_ar #
+#                    mfly_101210\pack_rt-thread_for_armfly_101210\kernel_fins #
+#                    h\Debug\Obj\finsh_ops.o E:\RT_thread\pack_rt-thread_for_ #
+#                    armfly_101210\pack_rt-thread_for_armfly_101210\kernel_fi #
+#                    nsh\Debug\Obj\finsh_parser.o                             #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\finsh_toke #
+#                    n.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_r #
+#                    t-thread_for_armfly_101210\kernel_finsh\Debug\Obj\finsh_ #
+#                    var.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack #
+#                    _rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj\fins #
+#                    h_vm.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pac #
+#                    k_rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj\idl #
+#                    e.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_r #
+#                    t-thread_for_armfly_101210\kernel_finsh\Debug\Obj\interr #
+#                    upt.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack #
+#                    _rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj\ipc. #
+#                    o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt- #
+#                    thread_for_armfly_101210\kernel_finsh\Debug\Obj\irq.o    #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\kservice.o #
+#                     E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-t #
+#                    hread_for_armfly_101210\kernel_finsh\Debug\Obj\mem.o     #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\mempool.o  #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\misc.o     #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\object.o   #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\scheduler. #
+#                    o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt- #
+#                    thread_for_armfly_101210\kernel_finsh\Debug\Obj\serial.o #
+#                     E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-t #
+#                    hread_for_armfly_101210\kernel_finsh\Debug\Obj\shell.o   #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\slab.o     #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\stack.o    #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\start_iar. #
+#                    o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt- #
+#                    thread_for_armfly_101210\kernel_finsh\Debug\Obj\startup. #
+#                    o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt- #
+#                    thread_for_armfly_101210\kernel_finsh\Debug\Obj\stm32f10 #
+#                    x_adc.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pa #
+#                    ck_rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj\st #
+#                    m32f10x_bkp.o E:\RT_thread\pack_rt-thread_for_armfly_101 #
+#                    210\pack_rt-thread_for_armfly_101210\kernel_finsh\Debug\ #
+#                    Obj\stm32f10x_can.o E:\RT_thread\pack_rt-thread_for_armf #
+#                    ly_101210\pack_rt-thread_for_armfly_101210\kernel_finsh\ #
+#                    Debug\Obj\stm32f10x_crc.o E:\RT_thread\pack_rt-thread_fo #
+#                    r_armfly_101210\pack_rt-thread_for_armfly_101210\kernel_ #
+#                    finsh\Debug\Obj\stm32f10x_dac.o                          #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\stm32f10x_ #
+#                    dbgmcu.o E:\RT_thread\pack_rt-thread_for_armfly_101210\p #
+#                    ack_rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj\s #
+#                    tm32f10x_dma.o E:\RT_thread\pack_rt-thread_for_armfly_10 #
+#                    1210\pack_rt-thread_for_armfly_101210\kernel_finsh\Debug #
+#                    \Obj\stm32f10x_exti.o E:\RT_thread\pack_rt-thread_for_ar #
+#                    mfly_101210\pack_rt-thread_for_armfly_101210\kernel_fins #
+#                    h\Debug\Obj\stm32f10x_flash.o                            #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\stm32f10x_ #
+#                    fsmc.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pac #
+#                    k_rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj\stm #
+#                    32f10x_gpio.o E:\RT_thread\pack_rt-thread_for_armfly_101 #
+#                    210\pack_rt-thread_for_armfly_101210\kernel_finsh\Debug\ #
+#                    Obj\stm32f10x_i2c.o E:\RT_thread\pack_rt-thread_for_armf #
+#                    ly_101210\pack_rt-thread_for_armfly_101210\kernel_finsh\ #
+#                    Debug\Obj\stm32f10x_it.o E:\RT_thread\pack_rt-thread_for #
+#                    _armfly_101210\pack_rt-thread_for_armfly_101210\kernel_f #
+#                    insh\Debug\Obj\stm32f10x_iwdg.o                          #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\stm32f10x_ #
+#                    pwr.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack #
+#                    _rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj\stm3 #
+#                    2f10x_rcc.o E:\RT_thread\pack_rt-thread_for_armfly_10121 #
+#                    0\pack_rt-thread_for_armfly_101210\kernel_finsh\Debug\Ob #
+#                    j\stm32f10x_rtc.o E:\RT_thread\pack_rt-thread_for_armfly #
+#                    _101210\pack_rt-thread_for_armfly_101210\kernel_finsh\De #
+#                    bug\Obj\stm32f10x_sdio.o E:\RT_thread\pack_rt-thread_for #
+#                    _armfly_101210\pack_rt-thread_for_armfly_101210\kernel_f #
+#                    insh\Debug\Obj\stm32f10x_spi.o                           #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\stm32f10x_ #
+#                    tim.o E:\RT_thread\pack_rt-thread_for_armfly_101210\pack #
+#                    _rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj\stm3 #
+#                    2f10x_usart.o E:\RT_thread\pack_rt-thread_for_armfly_101 #
+#                    210\pack_rt-thread_for_armfly_101210\kernel_finsh\Debug\ #
+#                    Obj\stm32f10x_wwdg.o E:\RT_thread\pack_rt-thread_for_arm #
+#                    fly_101210\pack_rt-thread_for_armfly_101210\kernel_finsh #
+#                    \Debug\Obj\symbol.o E:\RT_thread\pack_rt-thread_for_armf #
+#                    ly_101210\pack_rt-thread_for_armfly_101210\kernel_finsh\ #
+#                    Debug\Obj\system_stm32f10x.o                             #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\thread.o   #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\timer.o    #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\Obj\usart.o    #
+#                    --redirect _Printf=_PrintfTiny --redirect                #
+#                    _Scanf=_ScanfSmall -o E:\RT_thread\pack_rt-thread_for_ar #
+#                    mfly_101210\pack_rt-thread_for_armfly_101210\kernel_fins #
+#                    h\Debug\Exe\project.out --map                            #
+#                    E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-th #
+#                    read_for_armfly_101210\kernel_finsh\Debug\List\project.m #
+#                    ap --config E:\RT_thread\pack_rt-thread_for_armfly_10121 #
+#                    0\pack_rt-thread_for_armfly_101210\kernel_finsh\stm32f10 #
+#                    x_flash.icf --entry __iar_program_start                  #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0807ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x2000ffff] {
+          rw, block CSTACK, last block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                      0x150
+  .intvec            ro code  0x08000000   0x150  start_iar.o [1]
+                            - 0x08000150   0x150
+
+"P1":                                     0x90bc
+  .text              ro code  0x08000150  0x197c  finsh_compiler.o [1]
+  .text              ro code  0x08001acc   0xae4  finsh_ops.o [1]
+  .text              ro code  0x080025b0   0x97a  finsh_parser.o [1]
+  .text              ro code  0x08002f2c   0x6b4  cmd.o [1]
+  .text              ro code  0x080035e0   0x66c  shell.o [1]
+  .text              ro code  0x08003c4c   0x61a  finsh_token.o [1]
+  .text              ro code  0x08004268   0x574  mem.o [1]
+  .text              ro code  0x080047dc   0x54c  kservice.o [1]
+  .text              ro code  0x08004d28   0x48c  thread.o [1]
+  .text              ro code  0x080051b4   0x488  serial.o [1]
+  .text              ro code  0x0800563c   0x304  scheduler.o [1]
+  .text              ro code  0x08005940   0x278  timer.o [1]
+  .text              ro code  0x08005bb8   0x270  device.o [1]
+  .text              ro code  0x08005e28   0x210  finsh_heap.o [1]
+  .text              ro code  0x08006038   0x1da  stm32f10x_usart.o [1]
+  .text              ro code  0x08006214   0x1bc  object.o [1]
+  .text              ro code  0x080063d0   0x180  finsh_node.o [1]
+  .text              ro code  0x08006550   0x170  ipc.o [1]
+  .text              ro code  0x080066c0   0x158  system_stm32f10x.o [1]
+  .text              ro code  0x08006818   0x150  mempool.o [1]
+  .text              ro code  0x08006968   0x118  xstoul.o [3]
+  .text              ro code  0x08006a80   0x110  finsh_var.o [1]
+  .text              ro code  0x08006b90   0x108  usart.o [1]
+  .rodata            const    0x08006c98   0x100  scheduler.o [1]
+  .text              ro code  0x08006d98    0xf8  stm32f10x_rcc.o [1]
+  Initializer bytes  ro data  0x08006e90    0xf0  <for P2 mid-1>
+  .text              ro code  0x08006f80    0xcc  stm32f10x_gpio.o [1]
+  .rodata            const    0x0800704c    0xc4  finsh_ops.o [1]
+  .text              ro code  0x08007110    0xc4  idle.o [1]
+  .text              ro code  0x080071d4    0xbc  application.o [1]
+  FSymTab                     0x08007290    0xb4  <Block>
+    FSymTab          const    0x08007290     0xc  application.o [1]
+    FSymTab          const    0x0800729c     0xc  application.o [1]
+    FSymTab          const    0x080072a8     0xc  cmd.o [1]
+    FSymTab          const    0x080072b4     0xc  cmd.o [1]
+    FSymTab          const    0x080072c0     0xc  cmd.o [1]
+    FSymTab          const    0x080072cc     0xc  cmd.o [1]
+    FSymTab          const    0x080072d8     0xc  cmd.o [1]
+    FSymTab          const    0x080072e4     0xc  cmd.o [1]
+    FSymTab          const    0x080072f0     0xc  cmd.o [1]
+    FSymTab          const    0x080072fc     0xc  cmd.o [1]
+    FSymTab          const    0x08007308     0xc  cmd.o [1]
+    FSymTab          const    0x08007314     0xc  cmd.o [1]
+    FSymTab          const    0x08007320     0xc  cmd.o [1]
+    FSymTab          const    0x0800732c     0xc  cmd.o [1]
+    FSymTab          const    0x08007338     0xc  mem.o [1]
+    FSymTab          const    0x08007344     0x0  shell.o [1]
+  .text              ro code  0x08007344    0xb0  context_iar.o [1]
+  .text              ro code  0x080073f4    0xac  finsh_vm.o [1]
+  .text              ro code  0x080074a0    0xa0  board.o [1]
+  .text              ro code  0x08007540    0x84  misc.o [1]
+  .text              ro code  0x080075c4    0x7c  fault.o [1]
+  .text              ro code  0x08007640    0x70  ABImemcpy.o [4]
+  .text              ro code  0x080076b0    0x6c  strncpy.o [4]
+  .text              ro code  0x0800771c    0x66  ABImemset.o [4]
+  .text              ro code  0x08007782    0x66  ipc.o [1]
+  .text              ro code  0x080077e8    0x64  stack.o [1]
+  .rodata            const    0x0800784c    0x5c  mem.o [1]
+  .text              ro code  0x080078a8    0x5c  startup.o [1]
+  .text              ro code  0x08007904    0x58  memchr.o [4]
+  .rodata            const    0x0800795c    0x50  xstoul.o [3]
+  .rodata            const    0x080079ac    0x4c  cmd.o [1]
+  .rodata            const    0x080079f8    0x4c  mem.o [1]
+  .rodata            const    0x08007a44    0x48  cmd.o [1]
+  .rodata            const    0x08007a8c    0x48  mem.o [1]
+  .rodata            const    0x08007ad4    0x40  finsh_token.o [1]
+  .rodata            const    0x08007b14    0x3c  mem.o [1]
+  .text              ro code  0x08007b50    0x3c  clock.o [1]
+  .rodata            const    0x08007b8c    0x38  device.o [1]
+  .rodata            const    0x08007bc4    0x38  scheduler.o [1]
+  .text              ro code  0x08007bfc    0x36  finsh_init.o [1]
+  .text              ro code  0x08007c34    0x36  strlen.o [4]
+  .text              ro code  0x08007c6a    0x32  kservice.o [1]
+  .rodata            const    0x08007c9c    0x30  mem.o [1]
+  .rodata            const    0x08007ccc    0x30  mem.o [1]
+  .text              ro code  0x08007cfc    0x30  irq.o [1]
+  .rodata            const    0x08007d2c    0x2c  cmd.o [1]
+  .rodata            const    0x08007d58    0x2c  cmd.o [1]
+  .rodata            const    0x08007d84    0x2c  cmd.o [1]
+  .rodata            const    0x08007db0    0x2c  kservice.o [1]
+  .rodata            const    0x08007ddc    0x2c  mem.o [1]
+  .rodata            const    0x08007e08    0x2c  object.o [1]
+  .text              ro code  0x08007e34    0x2c  finsh_error.o [1]
+  .text              ro code  0x08007e60    0x2a  strncmp.o [3]
+  .rodata            const    0x08007e8c    0x28  cmd.o [1]
+  .rodata            const    0x08007eb4    0x28  cmd.o [1]
+  .rodata            const    0x08007edc    0x28  cmd.o [1]
+  .rodata            const    0x08007f04    0x28  mem.o [1]
+  .rodata            const    0x08007f2c    0x28  serial.o [1]
+  .rodata            const    0x08007f54    0x28  serial.o [1]
+  .rodata            const    0x08007f7c    0x24  cmd.o [1]
+  .rodata            const    0x08007fa0    0x24  cmd.o [1]
+  .rodata            const    0x08007fc4    0x24  cmd.o [1]
+  .rodata            const    0x08007fe8    0x24  cmd.o [1]
+  .rodata            const    0x0800800c    0x24  cmd.o [1]
+  .rodata            const    0x08008030    0x24  cmd.o [1]
+  .rodata            const    0x08008054    0x24  kservice.o [1]
+  .rodata            const    0x08008078    0x24  thread.o [1]
+  .rodata            const    0x0800809c    0x24  thread.o [1]
+  .rodata            const    0x080080c0    0x24  timer.o [1]
+  .text              ro code  0x080080e4    0x24  stm32f10x_it.o [1]
+  .text              ro code  0x08008108    0x24  copy_init2.o [4]
+  .text              ro code  0x0800812c    0x22  finsh_token.o [1]
+  .text              ro code  0x0800814e    0x22  kservice.o [1]
+  .iar.init_table    const    0x08008170    0x24  - Linker created -
+  .rodata            const    0x08008194    0x20  cmd.o [1]
+  .rodata            const    0x080081b4    0x20  cmd.o [1]
+  .rodata            const    0x080081d4    0x20  cmd.o [1]
+  .rodata            const    0x080081f4    0x20  cmd.o [1]
+  .rodata            const    0x08008214    0x20  cmd.o [1]
+  .rodata            const    0x08008234    0x20  device.o [1]
+  .rodata            const    0x08008254    0x20  ipc.o [1]
+  .rodata            const    0x08008274    0x20  mem.o [1]
+  .rodata            const    0x08008294    0x20  mem.o [1]
+  .rodata            const    0x080082b4    0x20  mem.o [1]
+  .rodata            const    0x080082d4    0x20  mem.o [1]
+  .rodata            const    0x080082f4    0x20  mempool.o [1]
+  .rodata            const    0x08008314    0x20  object.o [1]
+  .rodata            const    0x08008334    0x20  scheduler.o [1]
+  .rodata            const    0x08008354    0x20  serial.o [1]
+  .rodata            const    0x08008374    0x20  shell.o [1]
+  .rodata            const    0x08008394    0x20  shell.o [1]
+  .rodata            const    0x080083b4    0x20  thread.o [1]
+  .rodata            const    0x080083d4    0x20  thread.o [1]
+  .rodata            const    0x080083f4    0x20  timer.o [1]
+  .text              ro code  0x08008414    0x20  data_init2.o [4]
+  .rodata            const    0x08008434    0x1c  cmd.o [1]
+  .rodata            const    0x08008450    0x1c  cmd.o [1]
+  .rodata            const    0x0800846c    0x1c  cmd.o [1]
+  .rodata            const    0x08008488    0x1c  cmd.o [1]
+  .rodata            const    0x080084a4    0x1c  cmd.o [1]
+  .rodata            const    0x080084c0    0x1c  cmd.o [1]
+  .rodata            const    0x080084dc    0x1c  cmd.o [1]
+  .rodata            const    0x080084f8    0x1c  device.o [1]
+  .rodata            const    0x08008514    0x1c  fault.o [1]
+  .rodata            const    0x08008530    0x1c  kservice.o [1]
+  .rodata            const    0x0800854c    0x1c  object.o [1]
+  .rodata            const    0x08008568    0x1c  scheduler.o [1]
+  .rodata            const    0x08008584    0x1c  scheduler.o [1]
+  .rodata            const    0x080085a0    0x1c  scheduler.o [1]
+  .rodata            const    0x080085bc    0x1c  scheduler.o [1]
+  .text              ro code  0x080085d8    0x1c  start_iar.o [1]
+  .text              ro code  0x080085f4    0x1c  stm32f10x_dma.o [1]
+  .text              ro code  0x08008610    0x1a  zero_init2.o [4]
+  .rodata            const    0x0800862c    0x18  cmd.o [1]
+  .rodata            const    0x08008644    0x18  cmd.o [1]
+  .rodata            const    0x0800865c    0x18  cmd.o [1]
+  .rodata            const    0x08008674    0x18  cmd.o [1]
+  .rodata            const    0x0800868c    0x18  cmd.o [1]
+  .rodata            const    0x080086a4    0x18  cmd.o [1]
+  .rodata            const    0x080086bc    0x18  cmd.o [1]
+  .rodata            const    0x080086d4    0x18  cmd.o [1]
+  .rodata            const    0x080086ec    0x18  serial.o [1]
+  .rodata            const    0x08008704    0x18  serial.o [1]
+  .rodata            const    0x0800871c    0x18  serial.o [1]
+  .rodata            const    0x08008734    0x18  shell.o [1]
+  .rodata            const    0x0800874c    0x18  thread.o [1]
+  .text              ro code  0x08008764    0x18  cmain.o [4]
+  .rodata            const    0x0800877c    0x14  cmd.o [1]
+  .rodata            const    0x08008790    0x14  cmd.o [1]
+  .rodata            const    0x080087a4    0x14  cmd.o [1]
+  .rodata            const    0x080087b8    0x14  cmd.o [1]
+  .rodata            const    0x080087cc    0x14  cmd.o [1]
+  .rodata            const    0x080087e0    0x14  cmd.o [1]
+  .rodata            const    0x080087f4    0x14  cmd.o [1]
+  .rodata            const    0x08008808    0x14  cmd.o [1]
+  .rodata            const    0x0800881c    0x14  cmd.o [1]
+  .rodata            const    0x08008830    0x14  cmd.o [1]
+  .rodata            const    0x08008844    0x14  finsh_error.o [1]
+  .rodata            const    0x08008858    0x14  finsh_error.o [1]
+  .rodata            const    0x0800886c    0x14  finsh_error.o [1]
+  .rodata            const    0x08008880    0x14  finsh_error.o [1]
+  .rodata            const    0x08008894    0x14  kservice.o [1]
+  .rodata            const    0x080088a8    0x14  kservice.o [1]
+  .rodata            const    0x080088bc    0x14  mem.o [1]
+  .rodata            const    0x080088d0    0x14  mem.o [1]
+  .rodata            const    0x080088e4    0x14  object.o [1]
+  .rodata            const    0x080088f8    0x14  object.o [1]
+  .rodata            const    0x0800890c    0x14  object.o [1]
+  .rodata            const    0x08008920    0x14  scheduler.o [1]
+  .rodata            const    0x08008934    0x14  serial.o [1]
+  .rodata            const    0x08008948    0x14  serial.o [1]
+  .rodata            const    0x0800895c    0x14  serial.o [1]
+  .rodata            const    0x08008970    0x14  shell.o [1]
+  .rodata            const    0x08008984    0x14  shell.o [1]
+  .rodata            const    0x08008998    0x14  shell.o [1]
+  .rodata            const    0x080089ac    0x14  thread.o [1]
+  .rodata            const    0x080089c0    0x14  thread.o [1]
+  .rodata            const    0x080089d4    0x14  thread.o [1]
+  .rodata            const    0x080089e8    0x14  thread.o [1]
+  .rodata            const    0x080089fc    0x14  thread.o [1]
+  .rodata            const    0x08008a10    0x14  timer.o [1]
+  .rodata            const    0x08008a24    0x14  timer.o [1]
+  .text              ro code  0x08008a38    0x14  fault_iar.o [1]
+  .text              ro code  0x08008a4c    0x14  errno.o [3]
+  .text              ro code  0x08008a60    0x14  cmd.o [1]
+  .text              ro code  0x08008a74    0x14  finsh_compiler.o [1]
+  .text              ro code  0x08008a88    0x12  idle.o [1]
+  .rodata            const    0x08008a9c    0x10  application.o [1]
+  .rodata            const    0x08008aac    0x10  application.o [1]
+  .rodata            const    0x08008abc    0x10  application.o [1]
+  .rodata            const    0x08008acc    0x10  cmd.o [1]
+  .rodata            const    0x08008adc    0x10  cmd.o [1]
+  .rodata            const    0x08008aec    0x10  cmd.o [1]
+  .rodata            const    0x08008afc    0x10  cmd.o [1]
+  .rodata            const    0x08008b0c    0x10  cmd.o [1]
+  .rodata            const    0x08008b1c    0x10  cmd.o [1]
+  .rodata            const    0x08008b2c    0x10  cmd.o [1]
+  .rodata            const    0x08008b3c    0x10  cmd.o [1]
+  .rodata            const    0x08008b4c    0x10  cmd.o [1]
+  .rodata            const    0x08008b5c    0x10  cmd.o [1]
+  .rodata            const    0x08008b6c    0x10  cmd.o [1]
+  .rodata            const    0x08008b7c    0x10  cmd.o [1]
+  .rodata            const    0x08008b8c    0x10  cmd.o [1]
+  .rodata            const    0x08008b9c    0x10  device.o [1]
+  .rodata            const    0x08008bac    0x10  device.o [1]
+  .rodata            const    0x08008bbc    0x10  device.o [1]
+  .rodata            const    0x08008bcc    0x10  device.o [1]
+  .rodata            const    0x08008bdc    0x10  device.o [1]
+  .rodata            const    0x08008bec    0x10  fault.o [1]
+  .rodata            const    0x08008bfc    0x10  fault.o [1]
+  .rodata            const    0x08008c0c    0x10  fault.o [1]
+  .rodata            const    0x08008c1c    0x10  fault.o [1]
+  .rodata            const    0x08008c2c    0x10  fault.o [1]
+  .rodata            const    0x08008c3c    0x10  fault.o [1]
+  .rodata            const    0x08008c4c    0x10  fault.o [1]
+  .rodata            const    0x08008c5c    0x10  fault.o [1]
+  .rodata            const    0x08008c6c    0x10  finsh_error.o [1]
+  .rodata            const    0x08008c7c    0x10  finsh_error.o [1]
+  .rodata            const    0x08008c8c    0x10  finsh_error.o [1]
+  .rodata            const    0x08008c9c    0x10  finsh_error.o [1]
+  .rodata            const    0x08008cac    0x10  finsh_error.o [1]
+  .rodata            const    0x08008cbc    0x10  finsh_error.o [1]
+  .rodata            const    0x08008ccc    0x10  finsh_error.o [1]
+  .rodata            const    0x08008cdc    0x10  finsh_error.o [1]
+  .rodata            const    0x08008cec    0x10  ipc.o [1]
+  .rodata            const    0x08008cfc    0x10  mem.o [1]
+  .rodata            const    0x08008d0c    0x10  mempool.o [1]
+  .rodata            const    0x08008d1c    0x10  serial.o [1]
+  .rodata            const    0x08008d2c    0x10  serial.o [1]
+  .rodata            const    0x08008d3c    0x10  serial.o [1]
+  .rodata            const    0x08008d4c    0x10  shell.o [1]
+  .rodata            const    0x08008d5c    0x10  shell.o [1]
+  .rodata            const    0x08008d6c    0x10  thread.o [1]
+  .rodata            const    0x08008d7c    0x10  thread.o [1]
+  .rodata            const    0x08008d8c    0x10  thread.o [1]
+  .rodata            const    0x08008d9c    0x10  timer.o [1]
+  .rodata            const    0x08008dac    0x10  timer.o [1]
+  .rodata            const    0x08008dbc    0x10  timer.o [1]
+  VSymTab                     0x08008dcc    0x10  <Block>
+    VSymTab          const    0x08008dcc    0x10  cmd.o [1]
+    VSymTab          const    0x08008ddc     0x0  shell.o [1]
+  .text              ro code  0x08008ddc    0x10  cmd.o [1]
+  .text              ro code  0x08008dec    0x10  finsh_token.o [1]
+  .text              ro code  0x08008dfc    0x10  finsh_token.o [1]
+  .text              ro code  0x08008e0c     0xe  ipc.o [1]
+  .text              ro code  0x08008e1a     0xe  ipc.o [1]
+  .text              ro code  0x08008e28     0xe  mempool.o [1]
+  .text              ro code  0x08008e36     0xe  shell.o [1]
+  .rodata            const    0x08008e44     0xc  application.o [1]
+  .rodata            const    0x08008e50     0xc  application.o [1]
+  .rodata            const    0x08008e5c     0xc  cmd.o [1]
+  .rodata            const    0x08008e68     0xc  cmd.o [1]
+  .rodata            const    0x08008e74     0xc  cmd.o [1]
+  .rodata            const    0x08008e80     0xc  cmd.o [1]
+  .rodata            const    0x08008e8c     0xc  cmd.o [1]
+  .rodata            const    0x08008e98     0xc  cmd.o [1]
+  .rodata            const    0x08008ea4     0xc  cmd.o [1]
+  .rodata            const    0x08008eb0     0xc  cmd.o [1]
+  .rodata            const    0x08008ebc     0xc  cmd.o [1]
+  .rodata            const    0x08008ec8     0xc  cmd.o [1]
+  .rodata            const    0x08008ed4     0xc  cmd.o [1]
+  .rodata            const    0x08008ee0     0xc  cmd.o [1]
+  .rodata            const    0x08008eec     0xc  cmd.o [1]
+  .rodata            const    0x08008ef8     0xc  cmd.o [1]
+  .rodata            const    0x08008f04     0xc  finsh_error.o [1]
+  .rodata            const    0x08008f10     0xc  finsh_error.o [1]
+  .rodata            const    0x08008f1c     0xc  finsh_error.o [1]
+  .rodata            const    0x08008f28     0xc  finsh_token.o [1]
+  .rodata            const    0x08008f34     0xc  ipc.o [1]
+  .rodata            const    0x08008f40     0xc  ipc.o [1]
+  .rodata            const    0x08008f4c     0xc  kservice.o [1]
+  .rodata            const    0x08008f58     0xc  kservice.o [1]
+  .rodata            const    0x08008f64     0xc  mem.o [1]
+  .rodata            const    0x08008f70     0xc  mem.o [1]
+  .rodata            const    0x08008f7c     0xc  mem.o [1]
+  .rodata            const    0x08008f88     0xc  mem.o [1]
+  .rodata            const    0x08008f94     0xc  mempool.o [1]
+  .rodata            const    0x08008fa0     0xc  shell.o [1]
+  .text              ro code  0x08008fac     0xc  XXexit.o [4]
+  .text              ro code  0x08008fb8     0xc  finsh_token.o [1]
+  .text              ro code  0x08008fc4     0xc  ipc.o [1]
+  .text              ro code  0x08008fd0     0xa  cexit.o [4]
+  .rodata            const    0x08008fdc     0x8  application.o [1]
+  .rodata            const    0x08008fe4     0x8  application.o [1]
+  .rodata            const    0x08008fec     0x8  application.o [1]
+  .rodata            const    0x08008ff4     0x8  application.o [1]
+  .rodata            const    0x08008ffc     0x8  board.o [1]
+  .rodata            const    0x08009004     0x8  cmd.o [1]
+  .rodata            const    0x0800900c     0x8  cmd.o [1]
+  .rodata            const    0x08009014     0x8  cmd.o [1]
+  .rodata            const    0x0800901c     0x8  cmd.o [1]
+  .rodata            const    0x08009024     0x8  cmd.o [1]
+  .rodata            const    0x0800902c     0x8  cmd.o [1]
+  .rodata            const    0x08009034     0x8  finsh_token.o [1]
+  .rodata            const    0x0800903c     0x8  finsh_token.o [1]
+  .rodata            const    0x08009044     0x8  finsh_token.o [1]
+  .rodata            const    0x0800904c     0x8  finsh_token.o [1]
+  .rodata            const    0x08009054     0x8  finsh_token.o [1]
+  .rodata            const    0x0800905c     0x8  finsh_token.o [1]
+  .rodata            const    0x08009064     0x8  idle.o [1]
+  .rodata            const    0x0800906c     0x8  kservice.o [1]
+  .rodata            const    0x08009074     0x8  mem.o [1]
+  .rodata            const    0x0800907c     0x8  mem.o [1]
+  .rodata            const    0x08009084     0x8  shell.o [1]
+  .rodata            const    0x0800908c     0x8  shell.o [1]
+  .rodata            const    0x08009094     0x8  shell.o [1]
+  .rodata            const    0x0800909c     0x8  shell.o [1]
+  .rodata            const    0x080090a4     0x8  shell.o [1]
+  .rodata            const    0x080090ac     0x8  shell.o [1]
+  .rodata            const    0x080090b4     0x8  startup.o [1]
+  .rodata            const    0x080090bc     0x8  usart.o [1]
+  .text              ro code  0x080090c4     0x8  finsh_token.o [1]
+  .text              ro code  0x080090cc     0x6  ipc.o [1]
+  .text              ro code  0x080090d2     0x6  exit.o [3]
+  .rodata            const    0x080090d8     0x4  cmd.o [1]
+  .rodata            const    0x080090dc     0x4  cmd.o [1]
+  .rodata            const    0x080090e0     0x4  finsh_token.o [1]
+  .text              ro code  0x080090e4     0x4  start_iar.o [1]
+  .text              ro code  0x080090e8     0x4  start_iar.o [1]
+  .text              ro code  0x080090ec     0x4  start_iar.o [1]
+  .text              ro code  0x080090f0     0x4  start_iar.o [1]
+  .text              ro code  0x080090f4     0x4  start_iar.o [1]
+  .text              ro code  0x080090f8     0x4  start_iar.o [1]
+  .text              ro code  0x080090fc     0x4  start_iar.o [1]
+  .text              ro code  0x08009100     0x4  start_iar.o [1]
+  .text              ro code  0x08009104     0x4  start_iar.o [1]
+  .text              ro code  0x08009108     0x4  start_iar.o [1]
+  .text              ro code  0x0800910c     0x4  start_iar.o [1]
+  .text              ro code  0x08009110     0x4  start_iar.o [1]
+  .text              ro code  0x08009114     0x4  start_iar.o [1]
+  .text              ro code  0x08009118     0x4  start_iar.o [1]
+  .text              ro code  0x0800911c     0x4  start_iar.o [1]
+  .text              ro code  0x08009120     0x4  start_iar.o [1]
+  .text              ro code  0x08009124     0x4  start_iar.o [1]
+  .text              ro code  0x08009128     0x4  start_iar.o [1]
+  .text              ro code  0x0800912c     0x4  start_iar.o [1]
+  .text              ro code  0x08009130     0x4  start_iar.o [1]
+  .text              ro code  0x08009134     0x4  start_iar.o [1]
+  .text              ro code  0x08009138     0x4  start_iar.o [1]
+  .text              ro code  0x0800913c     0x4  start_iar.o [1]
+  .text              ro code  0x08009140     0x4  start_iar.o [1]
+  .text              ro code  0x08009144     0x4  start_iar.o [1]
+  .text              ro code  0x08009148     0x4  start_iar.o [1]
+  .text              ro code  0x0800914c     0x4  start_iar.o [1]
+  .text              ro code  0x08009150     0x4  start_iar.o [1]
+  .text              ro code  0x08009154     0x4  start_iar.o [1]
+  .text              ro code  0x08009158     0x4  start_iar.o [1]
+  .text              ro code  0x0800915c     0x4  start_iar.o [1]
+  .text              ro code  0x08009160     0x4  start_iar.o [1]
+  .text              ro code  0x08009164     0x4  start_iar.o [1]
+  .text              ro code  0x08009168     0x4  start_iar.o [1]
+  .text              ro code  0x0800916c     0x4  start_iar.o [1]
+  .text              ro code  0x08009170     0x4  start_iar.o [1]
+  .text              ro code  0x08009174     0x4  start_iar.o [1]
+  .text              ro code  0x08009178     0x4  start_iar.o [1]
+  .text              ro code  0x0800917c     0x4  start_iar.o [1]
+  .text              ro code  0x08009180     0x4  start_iar.o [1]
+  .text              ro code  0x08009184     0x4  start_iar.o [1]
+  .text              ro code  0x08009188     0x4  start_iar.o [1]
+  .text              ro code  0x0800918c     0x4  start_iar.o [1]
+  .text              ro code  0x08009190     0x4  start_iar.o [1]
+  .text              ro code  0x08009194     0x4  start_iar.o [1]
+  .text              ro code  0x08009198     0x4  start_iar.o [1]
+  .text              ro code  0x0800919c     0x4  start_iar.o [1]
+  .text              ro code  0x080091a0     0x4  start_iar.o [1]
+  .text              ro code  0x080091a4     0x4  start_iar.o [1]
+  .text              ro code  0x080091a8     0x4  start_iar.o [1]
+  .text              ro code  0x080091ac     0x4  start_iar.o [1]
+  .text              ro code  0x080091b0     0x4  start_iar.o [1]
+  .text              ro code  0x080091b4     0x4  start_iar.o [1]
+  .text              ro code  0x080091b8     0x4  start_iar.o [1]
+  .text              ro code  0x080091bc     0x4  start_iar.o [1]
+  .text              ro code  0x080091c0     0x4  start_iar.o [1]
+  .text              ro code  0x080091c4     0x4  start_iar.o [1]
+  .text              ro code  0x080091c8     0x4  start_iar.o [1]
+  .text              ro code  0x080091cc     0x4  start_iar.o [1]
+  .text              ro code  0x080091d0     0x4  start_iar.o [1]
+  .text              ro code  0x080091d4     0x4  start_iar.o [1]
+  .text              ro code  0x080091d8     0x4  start_iar.o [1]
+  .text              ro code  0x080091dc     0x4  start_iar.o [1]
+  .text              ro code  0x080091e0     0x4  start_iar.o [1]
+  .text              ro code  0x080091e4     0x4  start_iar.o [1]
+  .text              ro code  0x080091e8     0x4  start_iar.o [1]
+  .text              ro code  0x080091ec     0x4  start_iar.o [1]
+  .text              ro code  0x080091f0     0x4  start_iar.o [1]
+  .text              ro code  0x080091f4     0x4  start_iar.o [1]
+  .text              ro code  0x080091f8     0x4  start_iar.o [1]
+  .text              ro code  0x080091fc     0x4  start_iar.o [1]
+  .text              ro code  0x08009200     0x4  start_iar.o [1]
+  .text              ro code  0x08009204     0x4  start_iar.o [1]
+  .text              ro code  0x08009208     0x4  start_iar.o [1]
+                            - 0x0800920c  0x90bc
+
+"P2":                                     0x1858
+  CSTACK                      0x20000000   0x200  <Block>
+    CSTACK           uninit   0x20000000   0x200  <Block tail>
+  P2 mid-1                    0x20000200    0xf0  <Init block>
+    .data            inited   0x20000200    0x3c  finsh_error.o [1]
+    .data            inited   0x2000023c    0x90  object.o [1]
+    .data            inited   0x200002cc    0x10  stm32f10x_rcc.o [1]
+    .data            inited   0x200002dc     0x4  stm32f10x_rcc.o [1]
+    .data            inited   0x200002e0     0x4  system_stm32f10x.o [1]
+    .data            inited   0x200002e4     0xc  usart.o [1]
+  .bss               zero     0x200002f0   0x400  application.o [1]
+  .bss               zero     0x200006f0    0x80  application.o [1]
+  .bss               zero     0x20000770     0x4  clock.o [1]
+  .bss               zero     0x20000774     0x4  cmd.o [1]
+  .bss               zero     0x20000778     0x4  finsh_compiler.o [1]
+  .bss               zero     0x2000077c     0x4  finsh_compiler.o [1]
+  .bss               zero     0x20000780    0x80  finsh_heap.o [1]
+  .bss               zero     0x20000800     0x4  finsh_heap.o [1]
+  .bss               zero     0x20000804     0x4  finsh_heap.o [1]
+  .bss               zero     0x20000808   0x140  finsh_node.o [1]
+  .bss               zero     0x20000948    0xc0  finsh_var.o [1]
+  .bss               zero     0x20000a08     0x4  finsh_var.o [1]
+  .bss               zero     0x20000a0c   0x100  finsh_vm.o [1]
+  .bss               zero     0x20000b0c    0x80  finsh_vm.o [1]
+  .bss               zero     0x20000b8c     0x4  finsh_vm.o [1]
+  .bss               zero     0x20000b90     0x4  finsh_vm.o [1]
+  .bss               zero     0x20000b94     0x4  finsh_vm.o [1]
+  .bss               zero     0x20000b98    0x80  idle.o [1]
+  .bss               zero     0x20000c18   0x100  idle.o [1]
+  .bss               zero     0x20000d18     0x4  idle.o [1]
+  .bss               zero     0x20000d1c     0x4  interrupt.o [1]
+  .bss               zero     0x20000d20     0x4  interrupt.o [1]
+  .bss               zero     0x20000d24     0x4  interrupt.o [1]
+  .bss               zero     0x20000d28     0x4  kservice.o [1]
+  .bss               zero     0x20000d2c     0x4  kservice.o [1]
+  .bss               zero     0x20000d30    0x80  kservice.o [1]
+  .bss               zero     0x20000db0     0x4  mem.o [1]
+  .bss               zero     0x20000db4     0x4  mem.o [1]
+  .bss               zero     0x20000db8     0x4  mem.o [1]
+  .bss               zero     0x20000dbc     0x4  mem.o [1]
+  .bss               zero     0x20000dc0     0x4  mem.o [1]
+  .bss               zero     0x20000dc4    0x20  mem.o [1]
+  .bss               zero     0x20000de4     0x4  mem.o [1]
+  .bss               zero     0x20000de8     0x4  mem.o [1]
+  .bss               zero     0x20000dec     0x4  mem.o [1]
+  .bss               zero     0x20000df0     0x4  mempool.o [1]
+  .bss               zero     0x20000df4     0x4  object.o [1]
+  .bss               zero     0x20000df8     0x4  object.o [1]
+  .bss               zero     0x20000dfc     0x4  object.o [1]
+  .bss               zero     0x20000e00     0x4  object.o [1]
+  .bss               zero     0x20000e04     0x4  object.o [1]
+  .bss               zero     0x20000e08   0x100  scheduler.o [1]
+  .bss               zero     0x20000f08     0x4  scheduler.o [1]
+  .bss               zero     0x20000f0c     0x4  scheduler.o [1]
+  .bss               zero     0x20000f10     0x8  scheduler.o [1]
+  .bss               zero     0x20000f18     0x4  scheduler.o [1]
+  .bss               zero     0x20000f1c    0x80  shell.o [1]
+  .bss               zero     0x20000f9c   0x800  shell.o [1]
+  .bss               zero     0x2000179c     0x4  shell.o [1]
+  .bss               zero     0x200017a0     0x4  symbol.o [1]
+  .bss               zero     0x200017a4     0x4  symbol.o [1]
+  .bss               zero     0x200017a8     0x4  symbol.o [1]
+  .bss               zero     0x200017ac     0x4  symbol.o [1]
+  .bss               zero     0x200017b0     0x8  timer.o [1]
+  .bss               zero     0x200017b8     0x4  timer.o [1]
+  .bss               zero     0x200017bc    0x48  usart.o [1]
+  .bss               zero     0x20001804    0x40  usart.o [1]
+  .bss               zero     0x20001844     0x8  errno.o [3]
+  .bss               zero     0x2000184c     0x2  scheduler.o [1]
+  .bss               zero     0x2000184e     0x1  finsh_error.o [1]
+  .bss               zero     0x2000184f     0x1  irq.o [1]
+  .bss               zero     0x20001850     0x1  scheduler.o [1]
+  HEAP                        0x20001858     0x0  <Block>
+                            - 0x20001858  0x1858
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init2)
+    1 destination range, total size 0x1561:
+          0x200002f0  0x1561
+
+Copy (__iar_copy_init2)
+    1 source range, total size 0xf0 (100% of destination):
+          0x08006e90    0xf0
+    1 destination range, total size 0xf0:
+          0x20000200    0xf0
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module              ro code  ro data  rw data
+    ------              -------  -------  -------
+E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj: [1]
+    application.o           188      128    1 152
+    board.o                 160        8
+    clock.o                  60                 4
+    cmd.o                 1 752    1 956        4
+    context_iar.o           176
+    device.o                624      196
+    fault.o                 124      156
+    fault_iar.o              20
+    finsh_compiler.o      6 544                 8
+    finsh_error.o            44      304       61
+    finsh_heap.o            528               136
+    finsh_init.o             54
+    finsh_node.o            384               320
+    finsh_ops.o           2 788      196
+    finsh_parser.o        2 426
+    finsh_token.o         1 648      128
+    finsh_var.o             272               196
+    finsh_vm.o              172               396
+    idle.o                  214        8      388
+    interrupt.o                                12
+    ipc.o                   516       72
+    irq.o                    48                 1
+    kservice.o            1 440      180      136
+    mem.o                 1 396      740       64
+    mempool.o               350       60        4
+    misc.o                  132
+    object.o                444      308      164
+    scheduler.o             772      476      279
+    serial.o              1 160      292
+    shell.o               1 658      240    2 180
+    stack.o                 100
+    start_iar.o             660
+    startup.o                92        8
+    stm32f10x_dma.o          28
+    stm32f10x_gpio.o        204
+    stm32f10x_it.o           36
+    stm32f10x_rcc.o         248       20       20
+    stm32f10x_usart.o       474
+    symbol.o                                   16
+    system_stm32f10x.o      344        4        4
+    thread.o              1 164      308
+    timer.o                 632      156       12
+    usart.o                 264       20      148
+    ---------------------------------------------
+    Total:               30 340    5 964    5 705
+
+command line: [2]
+    ---------------------------------------------
+    Total:
+
+dl7M_tl_in.a: [3]
+    errno.o                  20                 8
+    exit.o                    6
+    strncmp.o                42
+    xstoul.o                280       80
+    ---------------------------------------------
+    Total:                  348       80        8
+
+rt7M_tl.a: [4]
+    ABImemcpy.o             112
+    ABImemset.o             102
+    XXexit.o                 12
+    cexit.o                  10
+    cmain.o                  24
+    copy_init2.o             36
+    data_init2.o             32
+    memchr.o                 88
+    strlen.o                 54
+    strncpy.o               108
+    zero_init2.o             26
+    ---------------------------------------------
+    Total:                  604
+
+    Gaps                      8        8        7
+    Linker created                    36      512
+-------------------------------------------------
+    Grand Total:         31 300    6 088    6 232
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+ADC1_2_IRQHandler       0x08009145          Code  Wk  start_iar.o [1]
+ADC3_IRQHandler         0x080091b9          Code  Wk  start_iar.o [1]
+ADCPrescTable           0x200002dc     0x4  Data  Lc  stm32f10x_rcc.o [1]
+APBAHBPrescTable        0x200002cc    0x10  Data  Lc  stm32f10x_rcc.o [1]
+BusFault_Handler        0x080080e9     0x2  Code  Gb  stm32f10x_it.o [1]
+CAN1_RX1_IRQHandler     0x08009151          Code  Wk  start_iar.o [1]
+CAN1_SCE_IRQHandler     0x08009155          Code  Wk  start_iar.o [1]
+CAN2_RX0_IRQHandler     0x080091fd          Code  Wk  start_iar.o [1]
+CAN2_RX1_IRQHandler     0x08009201          Code  Wk  start_iar.o [1]
+CAN2_SCE_IRQHandler     0x08009205          Code  Wk  start_iar.o [1]
+CAN2_TX_IRQHandler      0x080091f9          Code  Wk  start_iar.o [1]
+CSTACK$$Base            0x20000000           --   Gb  - Linker created -
+CSTACK$$Limit           0x20000200           --   Gb  - Linker created -
+DMA1_Channel1_IRQHandler
+                        0x08009129          Code  Wk  start_iar.o [1]
+DMA1_Channel2_IRQHandler
+                        0x0800912d          Code  Wk  start_iar.o [1]
+DMA1_Channel3_IRQHandler
+                        0x08009131          Code  Wk  start_iar.o [1]
+DMA1_Channel4_IRQHandler
+                        0x08009135          Code  Wk  start_iar.o [1]
+DMA1_Channel5_IRQHandler
+                        0x08009139          Code  Wk  start_iar.o [1]
+DMA1_Channel6_IRQHandler
+                        0x0800913d          Code  Wk  start_iar.o [1]
+DMA1_Channel7_IRQHandler
+                        0x08009141          Code  Wk  start_iar.o [1]
+DMA2_Channel1_IRQHandler
+                        0x080091dd          Code  Wk  start_iar.o [1]
+DMA2_Channel2_IRQHandler
+                        0x080091e1          Code  Wk  start_iar.o [1]
+DMA2_Channel3_IRQHandler
+                        0x080091e5          Code  Wk  start_iar.o [1]
+DMA2_Channel4_5_IRQHandler
+                        0x080091e9          Code  Wk  start_iar.o [1]
+DMA2_Channel5_IRQHandler
+                        0x080091ed          Code  Wk  start_iar.o [1]
+DMA_Cmd                 0x080085f5    0x1c  Code  Gb  stm32f10x_dma.o [1]
+DMA_Configuration       0x08006c01     0x2  Code  Lc  usart.o [1]
+DebugMon_Handler        0x080080ef     0x2  Code  Gb  stm32f10x_it.o [1]
+ETH_IRQHandler          0x080091f1          Code  Wk  start_iar.o [1]
+ETH_WKUP_IRQHandler     0x080091f5          Code  Wk  start_iar.o [1]
+EXTI0_IRQHandler        0x08009115          Code  Wk  start_iar.o [1]
+EXTI15_10_IRQHandler    0x0800919d          Code  Wk  start_iar.o [1]
+EXTI1_IRQHandler        0x08009119          Code  Wk  start_iar.o [1]
+EXTI2_IRQHandler        0x0800911d          Code  Wk  start_iar.o [1]
+EXTI3_IRQHandler        0x08009121          Code  Wk  start_iar.o [1]
+EXTI4_IRQHandler        0x08009125          Code  Wk  start_iar.o [1]
+EXTI9_5_IRQHandler      0x08009159          Code  Wk  start_iar.o [1]
+FLASH_IRQHandler        0x0800910d          Code  Wk  start_iar.o [1]
+FSMC_IRQHandler         0x080091bd          Code  Wk  start_iar.o [1]
+FSymTab$$Base           0x08007290           --   Gb  - Linker created -
+FSymTab$$Limit          0x08007344           --   Gb  - Linker created -
+GPIO_Configuration      0x08006ba7    0x36  Code  Lc  usart.o [1]
+GPIO_Init               0x08006f81    0xcc  Code  Gb  stm32f10x_gpio.o [1]
+HEAP$$Base              0x20001858           --   Gb  - Linker created -
+HEAP$$Limit             0x20001858           --   Gb  - Linker created -
+I2C1_ER_IRQHandler      0x0800917d          Code  Wk  start_iar.o [1]
+I2C1_EV_IRQHandler      0x08009179          Code  Wk  start_iar.o [1]
+I2C2_ER_IRQHandler      0x08009185          Code  Wk  start_iar.o [1]
+I2C2_EV_IRQHandler      0x08009181          Code  Wk  start_iar.o [1]
+MemManage_Handler       0x080080e7     0x2  Code  Gb  stm32f10x_it.o [1]
+NMI_Handler             0x080080e5     0x2  Code  Gb  stm32f10x_it.o [1]
+NVIC_Configuration      0x08006bdd    0x24  Code  Lc  usart.o [1]
+NVIC_Init               0x0800754b    0x66  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                        0x08007541     0xa  Code  Gb  misc.o [1]
+NVIC_SetPriority        0x080074a1    0x22  Code  Lc  board.o [1]
+OP_add_byte             0x08001acf    0x30  Code  Gb  finsh_ops.o [1]
+OP_add_dword            0x08001b2f    0x30  Code  Gb  finsh_ops.o [1]
+OP_add_word             0x08001aff    0x30  Code  Gb  finsh_ops.o [1]
+OP_and_byte             0x08001db7    0x30  Code  Gb  finsh_ops.o [1]
+OP_and_dword            0x08001e17    0x30  Code  Gb  finsh_ops.o [1]
+OP_and_word             0x08001de7    0x30  Code  Gb  finsh_ops.o [1]
+OP_bw_byte              0x08001f67    0x18  Code  Gb  finsh_ops.o [1]
+OP_bw_dword             0x08001f97    0x18  Code  Gb  finsh_ops.o [1]
+OP_bw_word              0x08001f7f    0x18  Code  Gb  finsh_ops.o [1]
+OP_call                 0x0800231b   0x28e  Code  Gb  finsh_ops.o [1]
+OP_div_byte             0x08001bef    0x32  Code  Gb  finsh_ops.o [1]
+OP_div_dword            0x08001c53    0x32  Code  Gb  finsh_ops.o [1]
+OP_div_word             0x08001c21    0x32  Code  Gb  finsh_ops.o [1]
+OP_ld_byte              0x080020cf    0x2e  Code  Gb  finsh_ops.o [1]
+OP_ld_dword             0x08002137    0x52  Code  Gb  finsh_ops.o [1]
+OP_ld_value_byte        0x08002189    0x54  Code  Gb  finsh_ops.o [1]
+OP_ld_value_byte_stack  0x080021dd    0x18  Code  Gb  finsh_ops.o [1]
+OP_ld_value_dword       0x0800225f    0x42  Code  Gb  finsh_ops.o [1]
+OP_ld_value_dword_stack
+                        0x080022a1    0x14  Code  Gb  finsh_ops.o [1]
+OP_ld_value_word        0x080021f5    0x54  Code  Gb  finsh_ops.o [1]
+OP_ld_value_word_stack  0x08002249    0x16  Code  Gb  finsh_ops.o [1]
+OP_ld_word              0x080020fd    0x3a  Code  Gb  finsh_ops.o [1]
+OP_mod_byte             0x08001c85    0x36  Code  Gb  finsh_ops.o [1]
+OP_mod_dword            0x08001cf1    0x36  Code  Gb  finsh_ops.o [1]
+OP_mod_word             0x08001cbb    0x36  Code  Gb  finsh_ops.o [1]
+OP_mul_byte             0x08001d27    0x30  Code  Gb  finsh_ops.o [1]
+OP_mul_dword            0x08001d87    0x30  Code  Gb  finsh_ops.o [1]
+OP_mul_word             0x08001d57    0x30  Code  Gb  finsh_ops.o [1]
+OP_no_op                0x08001acd     0x2  Code  Gb  finsh_ops.o [1]
+OP_or_byte              0x08001e47    0x30  Code  Gb  finsh_ops.o [1]
+OP_or_dword             0x08001ea7    0x30  Code  Gb  finsh_ops.o [1]
+OP_or_word              0x08001e77    0x30  Code  Gb  finsh_ops.o [1]
+OP_pop                  0x0800230f     0xc  Code  Gb  finsh_ops.o [1]
+OP_shl_byte             0x08001faf    0x30  Code  Gb  finsh_ops.o [1]
+OP_shl_dword            0x0800200f    0x30  Code  Gb  finsh_ops.o [1]
+OP_shl_word             0x08001fdf    0x30  Code  Gb  finsh_ops.o [1]
+OP_shr_byte             0x0800203f    0x30  Code  Gb  finsh_ops.o [1]
+OP_shr_dword            0x0800209f    0x30  Code  Gb  finsh_ops.o [1]
+OP_shr_word             0x0800206f    0x30  Code  Gb  finsh_ops.o [1]
+OP_st_byte              0x080022b5    0x1e  Code  Gb  finsh_ops.o [1]
+OP_st_dword             0x080022f1    0x1e  Code  Gb  finsh_ops.o [1]
+OP_st_word              0x080022d3    0x1e  Code  Gb  finsh_ops.o [1]
+OP_sub_byte             0x08001b5f    0x30  Code  Gb  finsh_ops.o [1]
+OP_sub_dword            0x08001bbf    0x30  Code  Gb  finsh_ops.o [1]
+OP_sub_word             0x08001b8f    0x30  Code  Gb  finsh_ops.o [1]
+OP_xor_byte             0x08001ed7    0x30  Code  Gb  finsh_ops.o [1]
+OP_xor_dword            0x08001f37    0x30  Code  Gb  finsh_ops.o [1]
+OP_xor_word             0x08001f07    0x30  Code  Gb  finsh_ops.o [1]
+OTG_FS_IRQHandler       0x08009209          Code  Wk  start_iar.o [1]
+OTG_FS_WKUP_IRQHandler  0x080091a5          Code  Wk  start_iar.o [1]
+PVD_IRQHandler          0x08009101          Code  Wk  start_iar.o [1]
+RCC_APB2PeriphClockCmd  0x08006e59    0x20  Code  Gb  stm32f10x_rcc.o [1]
+RCC_Configuration       0x08006b91    0x16  Code  Lc  usart.o [1]
+RCC_GetClocksFreq       0x08006d99    0xc0  Code  Gb  stm32f10x_rcc.o [1]
+RCC_IRQHandler          0x08009111          Code  Wk  start_iar.o [1]
+RTCAlarm_IRQHandler     0x080091a1          Code  Wk  start_iar.o [1]
+RTC_IRQHandler          0x08009109          Code  Wk  start_iar.o [1]
+Region$$Table$$Base     0x08008170           --   Gb  - Linker created -
+Region$$Table$$Limit    0x08008194           --   Gb  - Linker created -
+SDIO_IRQHandler         0x080091c1          Code  Wk  start_iar.o [1]
+SPI1_IRQHandler         0x08009189          Code  Wk  start_iar.o [1]
+SPI2_IRQHandler         0x0800918d          Code  Wk  start_iar.o [1]
+SPI3_IRQHandler         0x080091c9          Code  Wk  start_iar.o [1]
+SVC_Handler             0x080080ed     0x2  Code  Gb  stm32f10x_it.o [1]
+SetSysClock             0x08006713     0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72         0x0800671b    0xe0  Code  Lc  system_stm32f10x.o [1]
+SysTick_Config          0x080074c3    0x30  Code  Lc  board.o [1]
+SystemCoreClock         0x200002e0     0x4  Data  Gb  system_stm32f10x.o [1]
+SystemInit              0x080066c1    0x52  Code  Gb  system_stm32f10x.o [1]
+SystemInit_ExtMemCtl    0x080085d9          Code  Wk  start_iar.o [1]
+TAMPER_IRQHandler       0x08009105          Code  Wk  start_iar.o [1]
+TIM1_BRK_IRQHandler     0x0800915d          Code  Wk  start_iar.o [1]
+TIM1_CC_IRQHandler      0x08009169          Code  Wk  start_iar.o [1]
+TIM1_TRG_COM_IRQHandler
+                        0x08009165          Code  Wk  start_iar.o [1]
+TIM1_UP_IRQHandler      0x08009161          Code  Wk  start_iar.o [1]
+TIM2_IRQHandler         0x0800916d          Code  Wk  start_iar.o [1]
+TIM3_IRQHandler         0x08009171          Code  Wk  start_iar.o [1]
+TIM4_IRQHandler         0x08009175          Code  Wk  start_iar.o [1]
+TIM5_IRQHandler         0x080091c5          Code  Wk  start_iar.o [1]
+TIM6_IRQHandler         0x080091d5          Code  Wk  start_iar.o [1]
+TIM7_IRQHandler         0x080091d9          Code  Wk  start_iar.o [1]
+TIM8_BRK_IRQHandler     0x080091a9          Code  Wk  start_iar.o [1]
+TIM8_CC_IRQHandler      0x080091b5          Code  Wk  start_iar.o [1]
+TIM8_TRG_COM_IRQHandler
+                        0x080091b1          Code  Wk  start_iar.o [1]
+TIM8_UP_IRQHandler      0x080091ad          Code  Wk  start_iar.o [1]
+UART4_IRQHandler        0x080091cd          Code  Wk  start_iar.o [1]
+UART5_IRQHandler        0x080091d1          Code  Wk  start_iar.o [1]
+USART1_IRQHandler       0x080080f1    0x12  Code  Gb  stm32f10x_it.o [1]
+USART2_IRQHandler       0x08009195          Code  Wk  start_iar.o [1]
+USART3_IRQHandler       0x08009199          Code  Wk  start_iar.o [1]
+USART_ClearITPendingBit
+                        0x080061f1    0x22  Code  Gb  stm32f10x_usart.o [1]
+USART_ClockInit         0x080060fd    0x24  Code  Gb  stm32f10x_usart.o [1]
+USART_Cmd               0x08006121    0x1a  Code  Gb  stm32f10x_usart.o [1]
+USART_GetITStatus       0x0800618d    0x64  Code  Gb  stm32f10x_usart.o [1]
+USART_ITConfig          0x0800613b    0x52  Code  Gb  stm32f10x_usart.o [1]
+USART_Init              0x08006039    0xbe  Code  Gb  stm32f10x_usart.o [1]
+USB_HP_CAN1_TX_IRQHandler
+                        0x08009149          Code  Wk  start_iar.o [1]
+USB_LP_CAN1_RX0_IRQHandler
+                        0x0800914d          Code  Wk  start_iar.o [1]
+UsageFault_Handler      0x080080eb     0x2  Code  Gb  stm32f10x_it.o [1]
+VSymTab$$Base           0x08008dcc           --   Gb  - Linker created -
+VSymTab$$Limit          0x08008ddc           --   Gb  - Linker created -
+WWDG_IRQHandler         0x080090fd          Code  Wk  start_iar.o [1]
+_LocaleC_isalpha        0x0800812d    0x22  Code  Gb  finsh_token.o [1]
+_LocaleC_islower        0x08008ded    0x10  Code  Gb  finsh_token.o [1]
+_LocaleC_isupper        0x08008dfd    0x10  Code  Gb  finsh_token.o [1]
+__aeabi_errno_addr      0x08008a4d    0x14  Code  Gb  errno.o [3]
+__aeabi_memcpy          0x08007641          Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4         0x0800765b          Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8         0x0800765b          Code  Gb  ABImemcpy.o [4]
+__aeabi_memset          0x0800771d          Code  Gb  ABImemset.o [4]
+__exit                  0x08008fad          Code  Gb  XXexit.o [4]
+__fsym_fun_a            0x08007290     0xc  Data  Gb  application.o [1]
+__fsym_fun_a_desc       0x08008e44     0xc  Data  Gb  application.o [1]
+__fsym_fun_a_name       0x08008fec     0x8  Data  Gb  application.o [1]
+__fsym_fun_b            0x0800729c     0xc  Data  Gb  application.o [1]
+__fsym_fun_b_desc       0x08008e50     0xc  Data  Gb  application.o [1]
+__fsym_fun_b_name       0x08008ff4     0x8  Data  Gb  application.o [1]
+__fsym_hello            0x080072a8     0xc  Data  Gb  cmd.o [1]
+__fsym_hello_desc       0x08008b5c    0x10  Data  Gb  cmd.o [1]
+__fsym_hello_name       0x08009014     0x8  Data  Gb  cmd.o [1]
+__fsym_list             0x0800732c     0xc  Data  Gb  cmd.o [1]
+__fsym_list_desc        0x080084c0    0x1c  Data  Gb  cmd.o [1]
+__fsym_list_device      0x08007320     0xc  Data  Gb  cmd.o [1]
+__fsym_list_device_desc
+                        0x080086d4    0x18  Data  Gb  cmd.o [1]
+__fsym_list_device_name
+                        0x08008ef8     0xc  Data  Gb  cmd.o [1]
+__fsym_list_event       0x080072d8     0xc  Data  Gb  cmd.o [1]
+__fsym_list_event_desc  0x08008674    0x18  Data  Gb  cmd.o [1]
+__fsym_list_event_name  0x08008ed4     0xc  Data  Gb  cmd.o [1]
+__fsym_list_mailbox     0x080072f0     0xc  Data  Gb  cmd.o [1]
+__fsym_list_mailbox_desc
+                        0x080086a4    0x18  Data  Gb  cmd.o [1]
+__fsym_list_mailbox_name
+                        0x08008b6c    0x10  Data  Gb  cmd.o [1]
+__fsym_list_mem         0x08007338     0xc  Data  Gb  mem.o [1]
+__fsym_list_mem_desc    0x080082d4    0x20  Data  Gb  mem.o [1]
+__fsym_list_mem_name    0x08008f88     0xc  Data  Gb  mem.o [1]
+__fsym_list_mempool     0x08007308     0xc  Data  Gb  cmd.o [1]
+__fsym_list_mempool_desc
+                        0x080084a4    0x1c  Data  Gb  cmd.o [1]
+__fsym_list_mempool_name
+                        0x08008b8c    0x10  Data  Gb  cmd.o [1]
+__fsym_list_msgqueue    0x080072fc     0xc  Data  Gb  cmd.o [1]
+__fsym_list_msgqueue_desc
+                        0x08008214    0x20  Data  Gb  cmd.o [1]
+__fsym_list_msgqueue_name
+                        0x08008b7c    0x10  Data  Gb  cmd.o [1]
+__fsym_list_mutex       0x080072e4     0xc  Data  Gb  cmd.o [1]
+__fsym_list_mutex_desc  0x0800868c    0x18  Data  Gb  cmd.o [1]
+__fsym_list_mutex_name  0x08008ee0     0xc  Data  Gb  cmd.o [1]
+__fsym_list_name        0x08009024     0x8  Data  Gb  cmd.o [1]
+__fsym_list_sem         0x080072cc     0xc  Data  Gb  cmd.o [1]
+__fsym_list_sem_desc    0x08008488    0x1c  Data  Gb  cmd.o [1]
+__fsym_list_sem_name    0x08008ec8     0xc  Data  Gb  cmd.o [1]
+__fsym_list_thread      0x080072c0     0xc  Data  Gb  cmd.o [1]
+__fsym_list_thread_desc
+                        0x08008ebc     0xc  Data  Gb  cmd.o [1]
+__fsym_list_thread_name
+                        0x08008eb0     0xc  Data  Gb  cmd.o [1]
+__fsym_list_timer       0x08007314     0xc  Data  Gb  cmd.o [1]
+__fsym_list_timer_desc  0x080086bc    0x18  Data  Gb  cmd.o [1]
+__fsym_list_timer_name  0x08008eec     0xc  Data  Gb  cmd.o [1]
+__fsym_version          0x080072b4     0xc  Data  Gb  cmd.o [1]
+__fsym_version_desc     0x08008030    0x24  Data  Gb  cmd.o [1]
+__fsym_version_name     0x0800901c     0x8  Data  Gb  cmd.o [1]
+__iar_Errno             0x20001848     0x4  Data  Gb  errno.o [3]
+__iar_Memchr            0x08007905          Code  Gb  memchr.o [4]
+__iar_Memset            0x0800771d          Code  Gb  ABImemset.o [4]
+__iar_Memset_word       0x08007725          Code  Gb  ABImemset.o [4]
+__iar_Stoul             0x08006969   0x118  Code  Gb  xstoul.o [3]
+__iar_Tls_setup___iar_Errno
+                        0x20001844     0x4  Data  Gb  errno.o [3]
+__iar_copy_init2        0x08008109    0x24  Code  Gb  copy_init2.o [4]
+__iar_data_init2        0x08008415    0x20  Code  Gb  data_init2.o [4]
+__iar_program_start     0x08008765          Code  Gb  cmain.o [4]
+__iar_zero_init2        0x08008611    0x1a  Code  Gb  zero_init2.o [4]
+__low_level_init        0x080085db          Code  Gb  start_iar.o [1]
+__vector_table          0x08000000          Data  Gb  start_iar.o [1]
+__vsym_dummy            0x08008dcc    0x10  Data  Gb  cmd.o [1]
+__vsym_dummy_desc       0x080084dc    0x1c  Data  Gb  cmd.o [1]
+__vsym_dummy_name       0x0800902c     0x8  Data  Gb  cmd.o [1]
+_console_device         0x20000d2c     0x4  Data  Lc  kservice.o [1]
+_exit                   0x08008fd1          Code  Gb  cexit.o [4]
+_list_device            0x080032e5    0x3e  Code  Lc  cmd.o [1]
+_list_event             0x08003089    0x3c  Code  Lc  cmd.o [1]
+_list_mailbox           0x0800311d    0x74  Code  Lc  cmd.o [1]
+_list_mempool           0x08003217    0x64  Code  Lc  cmd.o [1]
+_list_msgqueue          0x0800319d    0x6e  Code  Lc  cmd.o [1]
+_list_mutex             0x080030d1    0x40  Code  Lc  cmd.o [1]
+_list_sem               0x0800300f    0x6e  Code  Lc  cmd.o [1]
+_list_thread            0x08002f45    0x98  Code  Lc  cmd.o [1]
+_list_timer             0x08003289    0x4e  Code  Lc  cmd.o [1]
+_main                   0x08008777          Code  Gb  cmain.o [4]
+_rt_scheduler_stack_check
+                        0x0800563d    0x62  Code  Lc  scheduler.o [1]
+_rt_thread_init         0x08004d29    0xae  Code  Lc  thread.o [1]
+_rt_timer_init          0x08005941    0x20  Code  Lc  timer.o [1]
+_syscall_table_begin    0x200017a0     0x4  Data  Gb  symbol.o [1]
+_syscall_table_end      0x200017a4     0x4  Data  Gb  symbol.o [1]
+_sysvar_table_begin     0x200017a8     0x4  Data  Gb  symbol.o [1]
+_sysvar_table_end       0x200017ac     0x4  Data  Gb  symbol.o [1]
+allocate_list           0x20000804     0x4  Data  Lc  finsh_heap.o [1]
+atoi                    0x08008fb9     0xc  Code  Gb  finsh_token.o [1]
+digits                  0x08007984    0x28  Data  Lc  xstoul.o [3]
+divide                  0x08007c6b    0x32  Code  Gb  kservice.o [1]
+dummy                   0x20000774     0x4  Data  Lc  cmd.o [1]
+errno                   0x20000d28     0x4  Data  Gb  kservice.o [1]
+exit                    0x080090d3     0x6  Code  Gb  exit.o [3]
+finsh_auto_complete     0x080036bd    0x1c  Code  Gb  shell.o [1]
+finsh_block_insert      0x08005f45    0x3a  Code  Lc  finsh_heap.o [1]
+finsh_block_merge       0x08005fbb    0x7e  Code  Lc  finsh_heap.o [1]
+finsh_block_remove      0x08005f7f    0x26  Code  Lc  finsh_heap.o [1]
+finsh_block_split       0x08005fa5    0x16  Code  Lc  finsh_heap.o [1]
+finsh_compile           0x08000151  0x17a6  Code  Lc  finsh_compiler.o [1]
+finsh_compile_pc        0x2000077c     0x4  Data  Gb  finsh_compiler.o [1]
+finsh_compile_sp        0x20000778     0x4  Data  Gb  finsh_compiler.o [1]
+finsh_compiler_run      0x08001a63    0x58  Code  Gb  finsh_compiler.o [1]
+finsh_errno             0x08007e47     0x6  Code  Gb  finsh_error.o [1]
+finsh_error_init        0x08007e35     0xa  Code  Gb  finsh_error.o [1]
+finsh_error_set         0x08007e3f     0x8  Code  Gb  finsh_error.o [1]
+finsh_error_string      0x08007e4d     0xa  Code  Gb  finsh_error.o [1]
+finsh_error_string_table
+                        0x20000200    0x3c  Data  Lc  finsh_error.o [1]
+finsh_flush             0x08007c21    0x12  Code  Gb  finsh_init.o [1]
+finsh_handle_history    0x08003769   0x120  Code  Gb  shell.o [1]
+finsh_heap              0x20000780    0x80  Data  Gb  finsh_heap.o [1]
+finsh_heap_allocate     0x08005e55    0x74  Code  Gb  finsh_heap.o [1]
+finsh_heap_free         0x08005ec9    0x20  Code  Gb  finsh_heap.o [1]
+finsh_heap_gc           0x08005ee9    0x4a  Code  Lc  finsh_heap.o [1]
+finsh_heap_init         0x08005e29    0x2c  Code  Gb  finsh_heap.o [1]
+finsh_init              0x08007bfd    0x1a  Code  Gb  finsh_init.o [1]
+finsh_name_table        0x08007ad4    0x40  Data  Lc  finsh_token.o [1]
+finsh_node_allocate     0x080063e3    0x34  Code  Gb  finsh_node.o [1]
+finsh_node_init         0x080063d1    0x12  Code  Gb  finsh_node.o [1]
+finsh_node_new_char     0x08006499    0x1c  Code  Gb  finsh_node.o [1]
+finsh_node_new_id       0x0800641d    0x7c  Code  Gb  finsh_node.o [1]
+finsh_node_new_int      0x080064b5    0x1c  Code  Gb  finsh_node.o [1]
+finsh_node_new_long     0x080064d1    0x1c  Code  Gb  finsh_node.o [1]
+finsh_node_new_ptr      0x08006535    0x1c  Code  Gb  finsh_node.o [1]
+finsh_node_new_string   0x080064ed    0x48  Code  Gb  finsh_node.o [1]
+finsh_parser_init       0x08002f1d     0xe  Code  Gb  finsh_parser.o [1]
+finsh_parser_run        0x08002e3d    0xe0  Code  Gb  finsh_parser.o [1]
+finsh_pc                0x20000b90     0x4  Data  Gb  finsh_vm.o [1]
+finsh_push_history      0x08003895    0x9c  Code  Gb  shell.o [1]
+finsh_run_line          0x080036d9    0x90  Code  Gb  shell.o [1]
+finsh_rx_ind            0x080035fd    0x3a  Code  Lc  shell.o [1]
+finsh_set_device        0x08003637    0x86  Code  Gb  shell.o [1]
+finsh_sp                0x20000b8c     0x4  Data  Gb  finsh_vm.o [1]
+finsh_stack_bottom      0x08007c17     0x6  Code  Gb  finsh_init.o [1]
+finsh_syscall_lookup    0x0800742f    0x4e  Code  Gb  finsh_vm.o [1]
+finsh_system_function_init
+                        0x08003b49     0xa  Code  Gb  shell.o [1]
+finsh_system_init       0x08003b61    0x78  Code  Gb  shell.o [1]
+finsh_system_var_init   0x08003b53     0xa  Code  Gb  shell.o [1]
+finsh_sysvar_lookup     0x08006b33    0x4c  Code  Gb  finsh_var.o [1]
+finsh_thread            0x20000f1c    0x80  Data  Lc  shell.o [1]
+finsh_thread_entry      0x08003931   0x218  Code  Gb  shell.o [1]
+finsh_thread_stack      0x20000f9c   0x800  Data  Lc  shell.o [1]
+finsh_token_init        0x08003c4d    0x16  Code  Gb  finsh_token.o [1]
+finsh_token_token       0x08003c63    0x1a  Code  Gb  finsh_token.o [1]
+finsh_type_check        0x080018f7   0x16c  Code  Lc  finsh_compiler.o [1]
+finsh_var_init          0x08006a81    0x10  Code  Gb  finsh_var.o [1]
+finsh_var_insert        0x08006a91    0x6e  Code  Gb  finsh_var.o [1]
+finsh_var_lookup        0x08006aff    0x34  Code  Gb  finsh_var.o [1]
+finsh_vm_run            0x080073f5    0x3a  Code  Gb  finsh_vm.o [1]
+finsh_vm_stack          0x20000a0c   0x100  Data  Gb  finsh_vm.o [1]
+free_list               0x20000800     0x4  Data  Lc  finsh_heap.o [1]
+fun_a                   0x08007249    0x12  Code  Gb  application.o [1]
+fun_b                   0x0800725b    0x12  Code  Gb  application.o [1]
+global_errno            0x2000184e     0x1  Data  Gb  finsh_error.o [1]
+global_node_table       0x20000808   0x140  Data  Gb  finsh_node.o [1]
+global_syscall_list     0x20000b94     0x4  Data  Gb  finsh_vm.o [1]
+global_sysvar_list      0x20000a08     0x4  Data  Gb  finsh_var.o [1]
+global_variable         0x20000948    0xc0  Data  Gb  finsh_var.o [1]
+heap_end                0x20000dbc     0x4  Data  Lc  mem.o [1]
+heap_ptr                0x20000db8     0x4  Data  Lc  mem.o [1]
+heap_sem                0x20000dc4    0x20  Data  Lc  mem.o [1]
+hello                   0x08002f2d     0xe  Code  Gb  cmd.o [1]
+idle                    0x20000b98    0x80  Data  Lc  idle.o [1]
+isalpha                 0x080090c5     0x8  Code  Gb  finsh_token.o [1]
+lfree                   0x20000dc0     0x4  Data  Lc  mem.o [1]
+list                    0x08003331    0x70  Code  Gb  cmd.o [1]
+list_device             0x08003323     0xa  Code  Gb  cmd.o [1]
+list_event              0x080030c5     0xc  Code  Gb  cmd.o [1]
+list_mailbox            0x08003191     0xc  Code  Gb  cmd.o [1]
+list_mem                0x0800474b    0x22  Code  Gb  mem.o [1]
+list_mempool            0x0800327b     0xa  Code  Gb  cmd.o [1]
+list_msgqueue           0x0800320b     0xc  Code  Gb  cmd.o [1]
+list_mutex              0x08003111     0xc  Code  Gb  cmd.o [1]
+list_prefix             0x080033c5   0x126  Code  Gb  cmd.o [1]
+list_sem                0x0800307d     0xc  Code  Gb  cmd.o [1]
+list_thread             0x08002fdd     0xc  Code  Gb  cmd.o [1]
+list_timer              0x080032d7     0xa  Code  Gb  cmd.o [1]
+main                    0x080078f5    0x10  Code  Gb  startup.o [1]
+make_sys_node           0x08002e1b    0x22  Code  Lc  finsh_parser.o [1]
+max_mem                 0x20000dec     0x4  Data  Lc  mem.o [1]
+mem_size_aligned        0x20000de4     0x4  Data  Lc  mem.o [1]
+memchr                  0x08007905          Code  Gb  memchr.o [4]
+memcpy                  0x08008e37     0xe  Code  Gb  shell.o [1]
+memset                  0x08008a75    0x14  Code  Gb  finsh_compiler.o [1]
+ndigs                   0x0800795c    0x28  Data  Lc  xstoul.o [3]
+op_table                0x0800704c    0xc4  Data  Gb  finsh_ops.o [1]
+plug_holes              0x08004269   0x104  Code  Lc  mem.o [1]
+print_number            0x080048cf   0x128  Code  Lc  kservice.o [1]
+proc_additive_expr      0x08002a9d    0x70  Code  Lc  finsh_parser.o [1]
+proc_and_expr           0x080029e5    0x46  Code  Lc  finsh_parser.o [1]
+proc_assign_expr        0x08002927    0x32  Code  Lc  finsh_parser.o [1]
+proc_cast_expr          0x08002b97    0x48  Code  Lc  finsh_parser.o [1]
+proc_exclusive_or_expr  0x0800299f    0x46  Code  Lc  finsh_parser.o [1]
+proc_expr               0x0800291f     0x8  Code  Lc  finsh_parser.o [1]
+proc_expr_statement     0x080028e7    0x38  Code  Lc  finsh_parser.o [1]
+proc_identifier         0x080028bb    0x2c  Code  Lc  finsh_parser.o [1]
+proc_inclusive_or_expr  0x08002959    0x46  Code  Lc  finsh_parser.o [1]
+proc_multiplicative_expr
+                        0x08002b0d    0x8a  Code  Lc  finsh_parser.o [1]
+proc_param_list         0x08002dd1    0x4a  Code  Lc  finsh_parser.o [1]
+proc_postfix_expr       0x08002c9f    0x9c  Code  Lc  finsh_parser.o [1]
+proc_primary_expr       0x08002d3b    0x96  Code  Lc  finsh_parser.o [1]
+proc_shift_expr         0x08002a2b    0x72  Code  Lc  finsh_parser.o [1]
+proc_type               0x080027ad   0x10e  Code  Lc  finsh_parser.o [1]
+proc_unary_expr         0x08002bdf    0xc0  Code  Lc  finsh_parser.o [1]
+proc_variable_decl      0x080025b1   0x1fc  Code  Lc  finsh_parser.o [1]
+rt_application_init     0x080071fd    0x4c  Code  Gb  application.o [1]
+rt_console_set_device   0x08004c95    0x32  Code  Gb  kservice.o [1]
+rt_current_priority     0x20001850     0x1  Data  Gb  scheduler.o [1]
+rt_current_thread       0x20000f08     0x4  Data  Gb  scheduler.o [1]
+rt_device_close         0x08005cf9    0x46  Code  Gb  device.o [1]
+rt_device_find          0x08005c1b    0x50  Code  Gb  device.o [1]
+rt_device_init_all      0x08005bd9    0x42  Code  Gb  device.o [1]
+rt_device_open          0x08005c6b    0x8e  Code  Gb  device.o [1]
+rt_device_read          0x08005d3f    0x4c  Code  Gb  device.o [1]
+rt_device_register      0x08005bb9    0x20  Code  Gb  device.o [1]
+rt_device_set_rx_indicate
+                        0x08005dd7    0x2c  Code  Gb  device.o [1]
+rt_device_write         0x08005d8b    0x4c  Code  Gb  device.o [1]
+rt_enter_critical       0x080058b7    0x16  Code  Gb  scheduler.o [1]
+rt_exit_critical        0x080058cd    0x30  Code  Gb  scheduler.o [1]
+rt_free                 0x08004669    0xe2  Code  Gb  mem.o [1]
+rt_free_hook            0x20000db4     0x4  Data  Lc  mem.o [1]
+rt_hw_board_init        0x08007503    0x20  Code  Gb  board.o [1]
+rt_hw_console_output    0x08004cc7     0x2  Code  Wk  kservice.o [1]
+rt_hw_context_switch    0x08007353          Code  Gb  context_iar.o [1]
+rt_hw_context_switch_interrupt
+                        0x08007353          Code  Gb  context_iar.o [1]
+rt_hw_context_switch_to
+                        0x080073ad          Code  Gb  context_iar.o [1]
+rt_hw_hard_fault        0x08008a39          Code  Gb  fault_iar.o [1]
+rt_hw_hard_fault_exception
+                        0x080075c5    0x7c  Code  Gb  fault.o [1]
+rt_hw_interrupt_disable
+                        0x08007345          Code  Gb  context_iar.o [1]
+rt_hw_interrupt_enable  0x0800734d          Code  Gb  context_iar.o [1]
+rt_hw_interrupt_thread_switch
+                        0x080073d7          Code  Gb  context_iar.o [1]
+rt_hw_pend_sv           0x08007371          Code  Gb  context_iar.o [1]
+rt_hw_serial_isr        0x08005509    0xe6  Code  Gb  serial.o [1]
+rt_hw_serial_register   0x08005481    0x82  Code  Gb  serial.o [1]
+rt_hw_stack_init        0x080077e9    0x64  Code  Gb  stack.o [1]
+rt_hw_timer_handler     0x080074f3    0x10  Code  Gb  board.o [1]
+rt_hw_usart_init        0x08006c03    0x80  Code  Gb  usart.o [1]
+rt_interrupt_enter      0x08007cfd    0x16  Code  Gb  irq.o [1]
+rt_interrupt_from_thread
+                        0x20000d1c     0x4  Data  Gb  interrupt.o [1]
+rt_interrupt_leave      0x08007d13    0x16  Code  Gb  irq.o [1]
+rt_interrupt_nest       0x2000184f     0x1  Data  Gb  irq.o [1]
+rt_interrupt_to_thread  0x20000d20     0x4  Data  Gb  interrupt.o [1]
+rt_ipc_object_init      0x08008fc5     0xc  Code  Gb  ipc.o [1]
+rt_ipc_object_resume    0x08008e1b     0xe  Code  Gb  ipc.o [1]
+rt_ipc_object_suspend   0x08007783    0x66  Code  Gb  ipc.o [1]
+rt_kprintf              0x08004cc9    0x32  Code  Gb  kservice.o [1]
+rt_list_init            0x080090cd     0x6  Code  Gb  ipc.o [1]
+rt_list_insert_after    0x08008e29     0xe  Code  Gb  mempool.o [1]
+rt_list_insert_before   0x08008e0d     0xe  Code  Gb  ipc.o [1]
+rt_list_isempty         0x08008ddd    0x10  Code  Gb  cmd.o [1]
+rt_list_len             0x08008a61    0x14  Code  Gb  cmd.o [1]
+rt_list_remove          0x08008a89    0x12  Code  Gb  idle.o [1]
+rt_lowest_bitmap        0x08006c98   0x100  Data  Gb  scheduler.o [1]
+rt_malloc               0x08004425   0x244  Code  Gb  mem.o [1]
+rt_malloc_hook          0x20000db0     0x4  Data  Lc  mem.o [1]
+rt_memset               0x080047f5    0x52  Code  Gb  kservice.o [1]
+rt_mp_alloc             0x080068ab    0xac  Code  Gb  mempool.o [1]
+rt_mp_alloc_hook        0x20000df0     0x4  Data  Lc  mempool.o [1]
+rt_mp_init              0x08006819    0x92  Code  Gb  mempool.o [1]
+rt_object_allocate      0x080062a7    0x5c  Code  Gb  object.o [1]
+rt_object_attach_hook   0x20000df4     0x4  Data  Lc  object.o [1]
+rt_object_container     0x2000023c    0x90  Data  Gb  object.o [1]
+rt_object_delete        0x08006303    0x72  Code  Gb  object.o [1]
+rt_object_detach        0x0800625f    0x48  Code  Gb  object.o [1]
+rt_object_detach_hook   0x20000df8     0x4  Data  Lc  object.o [1]
+rt_object_init          0x08006217    0x48  Code  Gb  object.o [1]
+rt_object_is_systemobject
+                        0x08006375    0x36  Code  Gb  object.o [1]
+rt_object_put_hook      0x20000e04     0x4  Data  Gb  object.o [1]
+rt_object_take_hook     0x20000e00     0x4  Data  Gb  object.o [1]
+rt_object_trytake_hook  0x20000dfc     0x4  Data  Gb  object.o [1]
+rt_schedule             0x08005741    0xc8  Code  Gb  scheduler.o [1]
+rt_schedule_insert_thread
+                        0x08005809    0x56  Code  Gb  scheduler.o [1]
+rt_schedule_remove_thread
+                        0x0800585f    0x58  Code  Gb  scheduler.o [1]
+rt_scheduler_hook       0x20000f18     0x4  Data  Lc  scheduler.o [1]
+rt_scheduler_lock_nest  0x2000184c     0x2  Data  Lc  scheduler.o [1]
+rt_sem_init             0x08006551    0x46  Code  Gb  ipc.o [1]
+rt_sem_release          0x08006657    0x4e  Code  Gb  ipc.o [1]
+rt_sem_take             0x08006597    0xc0  Code  Gb  ipc.o [1]
+rt_serial_close         0x08005243     0x4  Code  Lc  serial.o [1]
+rt_serial_control       0x08005429    0x58  Code  Lc  serial.o [1]
+rt_serial_enable_dma    0x080052db    0x44  Code  Lc  serial.o [1]
+rt_serial_init          0x080051b5    0x8a  Code  Lc  serial.o [1]
+rt_serial_open          0x0800523f     0x4  Code  Lc  serial.o [1]
+rt_serial_read          0x08005247    0x94  Code  Lc  serial.o [1]
+rt_serial_write         0x0800531f   0x10a  Code  Lc  serial.o [1]
+rt_set_errno            0x080047dd    0x18  Code  Gb  kservice.o [1]
+rt_show_version         0x080048a3    0x2c  Code  Gb  kservice.o [1]
+rt_strlen               0x08004893    0x10  Code  Gb  kservice.o [1]
+rt_strncmp              0x08004861    0x32  Code  Gb  kservice.o [1]
+rt_strncpy              0x08004847    0x1a  Code  Gb  kservice.o [1]
+rt_system_heap_init     0x0800436d    0xb8  Code  Gb  mem.o [1]
+rt_system_object_init   0x08006215     0x2  Code  Gb  object.o [1]
+rt_system_scheduler_init
+                        0x0800569f    0x36  Code  Gb  scheduler.o [1]
+rt_system_scheduler_start
+                        0x080056d5    0x6c  Code  Gb  scheduler.o [1]
+rt_system_tick_init     0x08007b51     0x8  Code  Gb  clock.o [1]
+rt_system_timer_init    0x08005b83     0xa  Code  Gb  timer.o [1]
+rt_thread_create        0x08004e69    0x5c  Code  Gb  thread.o [1]
+rt_thread_defunct       0x20000f10     0x8  Data  Gb  scheduler.o [1]
+rt_thread_delay         0x0800504f     0x8  Code  Gb  thread.o [1]
+rt_thread_entry_led1    0x080071d5    0x14  Code  Lc  application.o [1]
+rt_thread_entry_led2    0x080071e9    0x14  Code  Gb  application.o [1]
+rt_thread_exit          0x08004f41    0x5e  Code  Lc  thread.o [1]
+rt_thread_idle_entry    0x08007177    0x16  Code  Lc  idle.o [1]
+rt_thread_idle_excute   0x08007111    0x66  Code  Gb  idle.o [1]
+rt_thread_idle_hook     0x20000d18     0x4  Data  Lc  idle.o [1]
+rt_thread_idle_init     0x0800718d    0x2c  Code  Gb  idle.o [1]
+rt_thread_init          0x08004dd7    0x92  Code  Gb  thread.o [1]
+rt_thread_priority_table
+                        0x20000e08   0x100  Data  Gb  scheduler.o [1]
+rt_thread_ready_priority_group
+                        0x20000f0c     0x4  Data  Gb  scheduler.o [1]
+rt_thread_resume        0x080050a5    0x64  Code  Gb  thread.o [1]
+rt_thread_self          0x08004ec5     0x8  Code  Gb  thread.o [1]
+rt_thread_sleep         0x08004fed    0x62  Code  Gb  thread.o [1]
+rt_thread_stack         0x20000c18   0x100  Data  Lc  idle.o [1]
+rt_thread_startup       0x08004ecd    0x74  Code  Gb  thread.o [1]
+rt_thread_suspend       0x08005057    0x4e  Code  Gb  thread.o [1]
+rt_thread_switch_interrput_flag
+                        0x20000d24     0x4  Data  Gb  interrupt.o [1]
+rt_thread_timeout       0x08005109    0x64  Code  Gb  thread.o [1]
+rt_thread_yield         0x08004f9f    0x4e  Code  Gb  thread.o [1]
+rt_tick                 0x20000770     0x4  Data  Lc  clock.o [1]
+rt_tick_get             0x08007b59     0x6  Code  Gb  clock.o [1]
+rt_tick_increase        0x08007b5f    0x2a  Code  Gb  clock.o [1]
+rt_timer_check          0x08005b07    0x7c  Code  Gb  timer.o [1]
+rt_timer_control        0x08005aa9    0x5e  Code  Gb  timer.o [1]
+rt_timer_detach         0x080059af    0x40  Code  Gb  timer.o [1]
+rt_timer_init           0x08005961    0x4e  Code  Gb  timer.o [1]
+rt_timer_list           0x200017b0     0x8  Data  Lc  timer.o [1]
+rt_timer_start          0x080059ef    0xba  Code  Gb  timer.o [1]
+rt_timer_timeout_hook   0x200017b8     0x4  Data  Lc  timer.o [1]
+rtthread_startup        0x080078a9    0x3e  Code  Gb  startup.o [1]
+shell                   0x2000179c     0x4  Data  Gb  shell.o [1]
+show_wait_queue         0x08002fe9    0x26  Code  Lc  cmd.o [1]
+skip_atoi               0x0800814f    0x22  Code  Gb  kservice.o [1]
+str_is_prefix           0x080033a1    0x24  Code  Lc  cmd.o [1]
+strcmp                  0x080035e1    0x1c  Code  Gb  shell.o [1]
+strlen                  0x08007c35          Code  Gb  strlen.o [4]
+strncmp                 0x08007e61    0x2a  Code  Gb  strncmp.o [3]
+strncpy                 0x080076b1          Code  Gb  strncpy.o [4]
+text_segment            0x20000b0c    0x80  Data  Gb  finsh_vm.o [1]
+thread_led2             0x200006f0    0x80  Data  Gb  application.o [1]
+thread_led2_stack       0x200002f0   0x400  Data  Gb  application.o [1]
+token_get_string        0x08003c7d    0x7a  Code  Gb  finsh_token.o [1]
+token_match_name        0x08003ed9    0x32  Code  Lc  finsh_token.o [1]
+token_next_char         0x08003cf7    0x42  Code  Lc  finsh_token.o [1]
+token_prev_char         0x08003d39    0x14  Code  Lc  finsh_token.o [1]
+token_proc_char         0x08003f31    0xa8  Code  Lc  finsh_token.o [1]
+token_proc_escape       0x08004027    0xac  Code  Lc  finsh_token.o [1]
+token_proc_number       0x080040d3   0x114  Code  Lc  finsh_token.o [1]
+token_proc_string       0x08003fd9    0x4e  Code  Lc  finsh_token.o [1]
+token_run               0x08003d4d   0x18c  Code  Lc  finsh_token.o [1]
+token_spec_number       0x080041e7    0x80  Code  Lc  finsh_token.o [1]
+token_trim_space        0x08003f11    0x20  Code  Lc  finsh_token.o [1]
+uart1                   0x200002e4     0xc  Data  Gb  usart.o [1]
+uart1_device            0x20001804    0x40  Data  Gb  usart.o [1]
+uart1_int_rx            0x200017bc    0x48  Data  Gb  usart.o [1]
+used_mem                0x20000de8     0x4  Data  Lc  mem.o [1]
+version                 0x08002f3b     0xa  Code  Gb  cmd.o [1]
+vsnprintf               0x080049f7   0x29e  Code  Lc  kservice.o [1]
+
+
+[1] = E:\RT_thread\pack_rt-thread_for_armfly_101210\pack_rt-thread_for_armfly_101210\kernel_finsh\Debug\Obj
+[2] = command line
+[3] = dl7M_tl_in.a
+[4] = rt7M_tl.a
+
+  31 300 bytes of readonly  code memory
+   6 088 bytes of readonly  data memory
+   6 232 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,4 @@
+src                       svn://127.0.0.1/RT-thread_svn_bak/trunk/src
+include                   svn://127.0.0.1/RT-thread_svn_bak/trunk/include
+libcpu/arm/stm32          svn://127.0.0.1/RT-thread_svn_bak/trunk/libcpu/arm/stm32
+components/finsh          svn://127.0.0.1/RT-thread_svn_bak/trunk/components/finsh

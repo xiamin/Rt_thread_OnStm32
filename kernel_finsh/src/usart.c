@@ -181,7 +181,7 @@ static void GPIO_Configuration(void)
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_10MHz;
     GPIO_Init(GPIOB, &GPIO_InitStructure);
 
-    GPIO_SetBits(GPIOB, GPIO_Pin_9);
+    GPIO_SetBits(GPIOB, GPIO_Pin_9);	//设置485为发送模式
 #endif
 
 #ifdef RT_USING_UART2
@@ -314,8 +314,9 @@ void rt_hw_usart_init()
                           &uart4);
 
     /* enable interrupt */
-    // USART_ITConfig(UART4, USART_IT_RXNE, ENABLE);
-    // USART_ITConfig(UART4, USART_IT_TC, ENABLE);
+
+    USART_ITConfig(UART4, USART_IT_RXNE, ENABLE);	//用于中断中串口发送
+
 #endif
 
 #ifdef RT_USING_UART2

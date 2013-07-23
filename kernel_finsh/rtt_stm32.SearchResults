@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 ---- uart1 Matches (1 in 1 files) ----
 usart.c (src):    /* register uart1 */
+=======
+---- USART1_IRQHandler Matches (2 in 1 files) ----
+stm32f10x_it.c (src):void USART1_IRQHandler(void)
+stm32f10x_it.c (src):void USART1_IRQHandler(void)
+>>>>>>> a07914e47d23d55ec52d7a9639d8655cf6676c81

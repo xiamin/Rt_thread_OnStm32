@@ -313,7 +313,7 @@ void rt_hw_usart_init()
                           &uart1);
 
     /* enable interrupt */
-    USART_ITConfig(UART4, USART_IT_RXNE, ENABLE);
+    USART_ITConfig(UART4, USART_IT_RXNE, ENABLE);	//用于中断中串口发送
 #endif
 
 #ifdef RT_USING_UART2

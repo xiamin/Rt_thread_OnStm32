@@ -1,6 +1,4 @@
-kernel_finsh/rtt_stm32.IAB
-kernel_finsh/rtt_stm32.IMB
-kernel_finsh/rtt_stm32.PO
-kernel_finsh/rtt_stm32.PR
-kernel_finsh/rtt_stm32.WK3
+kernel_finsh/rtt_stm32*
+kernel_finsh/Debug/*
+kernel_finsh/project*
 

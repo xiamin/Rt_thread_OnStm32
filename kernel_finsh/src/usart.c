@@ -181,7 +181,7 @@ static void GPIO_Configuration(void)
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_10MHz;
     GPIO_Init(GPIOB, &GPIO_InitStructure);
 
-    GPIO_SetBits(GPIOB, GPIO_Pin_9);
+    GPIO_SetBits(GPIOB, GPIO_Pin_9);	//设置485为发送模式
 #endif
 
 #ifdef RT_USING_UART2

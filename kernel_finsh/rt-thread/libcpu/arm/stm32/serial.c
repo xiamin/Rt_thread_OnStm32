@@ -224,12 +224,13 @@ static rt_size_t rt_serial_write (rt_device_t dev, rt_off_t pos, const void* buf
 			{
 				if (*ptr == '\n')
 				{
-					while (!(uart->uart_device->SR & USART_FLAG_TXE));
 					uart->uart_device->DR = '\r';
+                    			while (!(uart->uart_device->SR & USART_FLAG_TC));
+					//uart->uart_device->DR = '\r';
 				}
-
-				while (!(uart->uart_device->SR & USART_FLAG_TXE));
 				uart->uart_device->DR = (*ptr & 0x1FF);
+				while (!(uart->uart_device->SR & USART_FLAG_TC));
+				//uart->uart_device->DR = (*ptr & 0x1FF);
 
 				++ptr; --size;
 			}
@@ -239,7 +240,7 @@ static rt_size_t rt_serial_write (rt_device_t dev, rt_off_t pos, const void* buf
 			/* write data directly */
 			while (size)
 			{
-				while (!(uart->uart_device->SR & USART_FLAG_TXE));
+				while (!(uart->uart_device->SR & USART_FLAG_TC));
 				uart->uart_device->DR = (*ptr & 0x1FF);
 
 				++ptr; --size;

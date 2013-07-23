@@ -26,7 +26,7 @@ static void rt_thread_entry_led1(void* parameter)
     while (1)
     {
 //        /* led1 on */
-//        rt_kprintf("led1 on,count : %d\r\n",count);
+        rt_kprintf("led1 on,count : %d\r\n",count);
         count++;
 //        //rt_hw_led_on(0);
         rt_thread_delay(50); /* sleep 0.5 second and switch to other thread */
@@ -46,7 +46,7 @@ void rt_thread_entry_led2(void* parameter)
     while (1)
     {
 //        /* led2 on */
-//        rt_kprintf("led2 on,count : %d\r\n",count);
+        rt_kprintf("led2 on,count : %d\r\n",count);
         count++;
 //        //rt_hw_led_on(1);
         rt_thread_delay(RT_TICK_PER_SECOND);

@@ -137,7 +137,7 @@ void rt_hw_board_init()
 //    rt_hw_console_init();
 
     rt_hw_usart_init();
-    rt_console_set_device("uart1");
+    rt_console_set_device("uart4");
 }
 
 /*@}*/

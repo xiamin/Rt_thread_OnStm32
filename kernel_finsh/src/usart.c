@@ -34,14 +34,14 @@
  */
 
 #ifdef RT_USING_UART1
-struct stm32_serial_int_rx uart1_int_rx;
-struct stm32_serial_device uart1 =
+struct stm32_serial_int_rx uart4_int_rx;
+struct stm32_serial_device uart4 =
 {
-    USART1,
-    &uart1_int_rx,
+    UART4,
+    &uart4_int_rx,
     RT_NULL
 };
-struct rt_device uart1_device;
+struct rt_device uart4_device;
 #endif
 
 #ifdef RT_USING_UART2
@@ -164,7 +164,7 @@ static void GPIO_Configuration(void)
 #endif
 
     /*485端口映射，并设置方向为in*/
-	/* Configure USART1 Rx (PA.10) as input floating */
+    /* Configure USART1 Rx (PA.10) as input floating */
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
     GPIO_Init(GPIOC, &GPIO_InitStructure);
@@ -300,20 +300,22 @@ void rt_hw_usart_init()
     USART_InitStructure.USART_Parity = USART_Parity_No;
     USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
     USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
-    USART_ClockInitStructure.USART_Clock = USART_Clock_Disable;
-    USART_ClockInitStructure.USART_CPOL = USART_CPOL_Low;
-    USART_ClockInitStructure.USART_CPHA = USART_CPHA_2Edge;
-    USART_ClockInitStructure.USART_LastBit = USART_LastBit_Disable;
+//    USART_ClockInitStructure.USART_Clock = USART_Clock_Disable;
+//    USART_ClockInitStructure.USART_CPOL = USART_CPOL_Low;
+//    USART_ClockInitStructure.USART_CPHA = USART_CPHA_2Edge;
+//    USART_ClockInitStructure.USART_LastBit = USART_LastBit_Disable;
     USART_Init(UART4, &USART_InitStructure);
-    USART_ClockInit(UART4, &USART_ClockInitStructure);
+    USART_Cmd(UART4, ENABLE);
+//    USART_ClockInit(UART4, &USART_ClockInitStructure);
 
     /* register uart1 */
-    rt_hw_serial_register(&uart1_device, "uart1",
+    rt_hw_serial_register(&uart4_device, "uart4",
                           RT_DEVICE_FLAG_RDWR | RT_DEVICE_FLAG_INT_RX | RT_DEVICE_FLAG_STREAM,
-                          &uart1);
+                          &uart4);
 
     /* enable interrupt */
-    USART_ITConfig(UART4, USART_IT_RXNE, ENABLE);
+    // USART_ITConfig(UART4, USART_IT_RXNE, ENABLE);
+    // USART_ITConfig(UART4, USART_IT_TC, ENABLE);
 #endif
 
 #ifdef RT_USING_UART2

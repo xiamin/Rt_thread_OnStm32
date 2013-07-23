@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<Project/>
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Build</Factory></Window><Window><Factory>Watch</Factory></Window></Windows></PreferedWindows><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1307</ColumnWidth1></Debug-Log>
+      <Build>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>980</ColumnWidth1>
+        <ColumnWidth2>261</ColumnWidth2>
+        <ColumnWidth3>65</ColumnWidth3>
+      <PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Debug-Log</Factory></Window><Window><Factory>Watch</Factory></Window></Windows></PreferedWindows></Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>87</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        
+        
+        
+      <MixedMode>1</MixedMode><CodeCovShow>1</CodeCovShow><InstrProfShow>1</InstrProfShow></Disassembly>
+      <Watch>
+        <Format>
+          <struct_types/>
+          <watch_formats/>
+        </Format>
+        
+        
+        
+        
+      <PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Debug-Log</Factory></Window><Window><Factory>Build</Factory></Window></Windows></PreferedWindows><Column0>513</Column0><Column1>293</Column1><Column2>374</Column2><Column3>399</Column3></Watch>
+      <Register/>
+    </Static>
+    <Windows>
+      
+      
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-30272-32705</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>project</ExpandedNode><ExpandedNode>project/Output</ExpandedNode><ExpandedNode>project/STM32</ExpandedNode><ExpandedNode>project/system</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-8252-32708</Identity>
+            <TabName>Disassembly</TabName>
+            <Factory>Disassembly</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-24291-253</Identity>
+            <TabName>Register</TabName>
+            <Factory>Register</Factory>
+            <Session>
+              
+              
+              
+              
+              
+              
+            <REG1>0</REG1><REG2>0</REG2><Group>38</Group><States>12</States><State0>UART4_BRR</State0><State1>UART4_CR1</State1><State2>UART4_DR</State2><State3>UART4_SR</State3><State4>UART5_CR1</State4><State5>UART5_SR</State5><State6>USART1_SR</State6><State7>USART2_BRR</State7><State8>USART2_DR</State8><State9>USART2_GTPR</State9><State10>USART2_SR</State10><State11>USART3_SR</State11></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3><Tabs><Tab><Identity>TabID-18207-6978</Identity><TabName>Watch</TabName><Factory>Watch</Factory><Session><Expressions><Expression><Expression>uart->uart_device->DR</Expression></Expression></Expressions><TabId>1</TabId><Column0>513</Column0><Column1>293</Column1><Column2>374</Column2><Column3>399</Column3></Session></Tab><Tab><Identity>TabID-3276-7053</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs><SelectedTab>1</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\application.c</Filename><XPos>0</XPos><YPos>42</YPos><SelStart>932</SelStart><SelEnd>936</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\rt-thread\components\finsh\cmd.c</Filename><XPos>0</XPos><YPos>48</YPos><SelStart>256</SelStart><SelEnd>256</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\rt-thread\components\finsh\shell.c</Filename><XPos>0</XPos><YPos>195</YPos><SelStart>111</SelStart><SelEnd>111</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\rt-thread\libcpu\arm\stm32\cpu.c</Filename><XPos>0</XPos><YPos>42</YPos><SelStart>641</SelStart><SelEnd>641</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\stm32f10x_it.c</Filename><XPos>0</XPos><YPos>120</YPos><SelStart>3633</SelStart><SelEnd>3633</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\startup.c</Filename><XPos>0</XPos><YPos>111</YPos><SelStart>2744</SelStart><SelEnd>2744</SelEnd></Tab><ActiveTab>5</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\rt-thread\libcpu\arm\stm32\serial.c</Filename><XPos>0</XPos><YPos>33</YPos><SelStart>1672</SelStart><SelEnd>1672</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c</Filename><XPos>0</XPos><YPos>338</YPos><SelStart>13494</SelStart><SelEnd>13494</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\rt-thread\src\idle.c</Filename><XPos>0</XPos><YPos>133</YPos><SelStart>3508</SelStart><SelEnd>3508</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00e6d468><key>iaridepm.enu1</key></Toolbar-00e6d468></Sizes></Row0><Row1><Sizes><Toolbar-0668cd90><key>debuggergui.enu1</key></Toolbar-0668cd90></Sizes></Row1><Row2><Sizes><Toolbar-0cdde9b0><key>armjlink.enu1</key></Toolbar-0cdde9b0></Sizes></Row2></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>532</Bottom><Right>161</Right><x>-2</x><y>-2</y><xscreen>148</xscreen><yscreen>136</yscreen><sizeHorzCX>108346</sizeHorzCX><sizeHorzCY>198251</sizeHorzCY><sizeVertCX>119327</sizeVertCX><sizeVertCY>778426</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>532</Bottom><Right>274</Right><x>-2</x><y>-2</y><xscreen>148</xscreen><yscreen>136</yscreen><sizeHorzCX>108346</sizeHorzCX><sizeHorzCY>198251</sizeHorzCY><sizeVertCX>202050</sizeVertCX><sizeVertCY>778426</sizeVertCY></Rect></Wnd1></Sizes></Row0><Row1><Sizes><Wnd2><Rect><Top>-2</Top><Left>272</Left><Bottom>532</Bottom><Right>579</Right><x>272</x><y>-2</y><xscreen>148</xscreen><yscreen>136</yscreen><sizeHorzCX>108346</sizeHorzCX><sizeHorzCY>198251</sizeHorzCY><sizeVertCX>224744</sizeVertCX><sizeVertCY>778426</sizeVertCY></Rect></Wnd2></Sizes></Row1></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>61</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>63</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>91837</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>291545</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
 
 
